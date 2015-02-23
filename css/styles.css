@@ -21,14 +21,14 @@
 /* Changing navbar color scheme START */
 /* navbar */
 .navbar-default {
-    background-color: #F8F8F8;
+    background-color: #282828; /* original #F8F8F8 */
     border-color: #E7E7E7;
-    background-image: url('../images/test_pattern(50)(1).png');
-    background-repeat: repeat-x;
+    background-image: url('../images/hex_pattern(2560)(1).png');
+    background-size: 100%;
 }
 /* title */
 .navbar-default .navbar-brand {
-    color: #777;
+    color: black; /* original #777 */
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -36,7 +36,7 @@
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    color: #C19E31;  /* original #777 */
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
