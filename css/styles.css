@@ -10,7 +10,7 @@ body {
 }
 .navbar-brand {
   margin-top: 3px;
-  width: 280px;
+  width: 290px;
 }
 a.navbar-brand {
   padding: 0;
@@ -21,7 +21,8 @@ a.navbar-brand {
   width: 80px;
 }
 .navbar-brand p {
-  font-size: 20px;
+  font-family: 'Michroma', sans-serif;
+  font-size: 16px;
   margin-top: 13px;
   margin-left: 90px;
 }
@@ -31,7 +32,7 @@ a.navbar-brand {
 .navbar-default {
     background-color: #282828; /* original #F8F8F8 */
     border-color: #E7E7E7;
-    background-image: url('../images/hex_pattern(2560)(3).png');
+    background-image: url('../images/hex_pattern_footer(2560)(1).png');
     background-size: 100%;
 }
 /* title */
@@ -44,6 +45,7 @@ a.navbar-brand {
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
+    font-size: 0.9em;
     color: #C7A865;  /* original #777 */
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -98,6 +100,9 @@ a.navbar-brand {
         color: #333;
     }
 }
+.navbar-fixed-top {
+  border-width: 0;
+}
 /* Changing navbar color scheme END */
 
 /* Increasing navbar height START */
@@ -127,10 +132,16 @@ a.navbar-brand {
   width: 100%;
 }
 #slide-01 {
+  position: relative;
   background-image: url('../images/intersection(2560)(1).jpg');
   background-position: center;
   background-size: cover;
-
+}
+#slide-01 img {
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  top: 20%;
 }
 
 /* Footer START */
@@ -142,6 +153,7 @@ a.navbar-brand {
 .footer li, .footer li a:link, .footer li a:visited, .footer li a:hover, .footer li a:focus, .footer li a:focus {
   color: #C7A865;
   text-decoration: none;
+  font-size: 0.9em;
 }
 .footer h5 {
   display: block;
@@ -149,7 +161,7 @@ a.navbar-brand {
   margin-top: 20px;
   padding-top: 7px;
   color: #C7A865;
-  font-weight: normal;
+  font-weight: 300;
   width: 150px;
   height: 30px;
 }
@@ -162,7 +174,7 @@ a.navbar-brand {
   margin-top: 20px;
   padding-top: 7px;
   color: #C7A865;
-  font-weight: normal;
+  font-weight: 300;
   width: 150px;
   height: 30px;
 }
@@ -170,5 +182,6 @@ a.navbar-brand {
   color: #C7A865;
   text-decoration: none;
   text-align: right;
+  font-size: 0.9em;
 }
 /* Footer END */
