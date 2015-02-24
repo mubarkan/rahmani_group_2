@@ -23,7 +23,7 @@
 .navbar-default {
     background-color: #282828; /* original #F8F8F8 */
     border-color: #E7E7E7;
-    background-image: url('../images/hex_pattern(2560)(1).png');
+    background-image: url('../images/hex_pattern(2560)(3).png');
     background-size: 100%;
 }
 /* title */
@@ -36,7 +36,7 @@
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
-    color: #C19E31;  /* original #777 */
+    color: #C7A865;  /* original #777 */
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -91,3 +91,20 @@
     }
 }
 /* Changing navbar color scheme END */
+
+/* Increasing navbar height START */
+.navbar-fixed-top {
+    min-height: 80px;
+}
+
+.navbar-nav > li > a {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 80px;
+}
+@media (min-width: 768px) {
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 50px;
+    }
+}
+/* Increasing navbar height END */
