@@ -3,6 +3,9 @@ function adjustSlidesHeight() {
   $('.slides-body').css({
     'height': height-100
   });
+  $('#slide-01').css({
+    'height': height-100
+  });
 }
 
 jQuery(document).ready(function() {
