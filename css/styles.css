@@ -4,6 +4,10 @@
   font-style: normal;
   font-weight: normal;
 }
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
 .navbar-brand {
   margin-top: 3px;
   width: 280px;
@@ -112,6 +116,7 @@ a.navbar-brand {
     }
 }
 /* Increasing navbar height END */
+
 .top-offset {
   border: 1px solid red;
   height: 80px;
@@ -122,11 +127,12 @@ a.navbar-brand {
   width: 100%;
 }
 #slide-01 {
-  border: 1px solid red;
   background-image: url('../images/intersection(2560)(1).jpg');
   background-position: center;
-  background-size:100%;
+  background-size: cover;
+
 }
+
 /* Footer START */
 .footer {
   background-color: #282828;
