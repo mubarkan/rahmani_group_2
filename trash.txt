@@ -1,0 +1,8 @@
+<img src="images/intersection(2560)(1).jpg" alt="gold background with vision mission">
+
+#slide-01 img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+   -webkit-transform: translateY(-50%) translateX(-50%);
+}
