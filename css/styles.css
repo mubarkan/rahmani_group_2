@@ -200,25 +200,35 @@ a.navbar-brand {
 }
 #slide-02 #fact-2 {
   border: 1px solid #C7A865;
-  background-color: #C7A865;
+  background-image: url('../images/1000-plus.jpg');
+  background-size: cover;
+  background-position: center;
   position: absolute;
-  padding: 15px;
   top: 30%;
   left:60%;
   width: 13%;
   height: 15%;
 }
-#slide-02 #fact-2 p {
-  color: black;
-  font-weight: 300;
-  font-size: 2.0em;
+#slide-02 #fact-3 {
+  border: 1px solid #C7A865;
+  position: absolute;
+  top: 45%;
+  left:60%;
+  width: 13%;
+  height: 25%;
 }
+#slide-02 #fact-3 p {
+  color: #C7A865;
+  font-weight: 300;
+  font-size: 1.8em;
+}
+
 /* Slide 2 END */
 
 /* Slide 3 START */
 #slide-03 {
   display: none;
-  background-image: url('../images/pie_chart(2560_1400)(5).jpg');
+  background-image: url('../images/pie(2560)(1).jpg');
   background-position: center;
   background-size: cover;
 }
