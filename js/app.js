@@ -46,6 +46,7 @@ function adjustSlide02Text() {
   });
 }
 function nextSlide() {
+  adjustSlide02Text();
   var currentSlideId = $('.active').attr('id');
   var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
   if (currentSlideNumber === 4) {
@@ -70,6 +71,7 @@ function nextSlide() {
 
 }
 function previousSlide() {
+  adjustSlide02Text();
   var currentSlideId = $('.active').attr('id');
   var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
   if (currentSlideNumber === 1) {
