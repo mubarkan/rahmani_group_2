@@ -29,6 +29,9 @@ function nextSlide() {
 
   if (currentSlideNumber === 1) {
     emptySlideOne();
+  } else if (currentSlideNumber === 4 && nextSlideNumber === 1) {
+    console.log("hey");
+    populateSlideOne();
   }
 
   setTimeout(function() {
@@ -58,6 +61,12 @@ function emptySlideOne() {
   $('#slide-01 img').animate({
     'top': '22%',
     'opacity': 'hide'
+  }, 500);
+}
+function populateSlideOne() {
+  $('#slide-01 img').css({
+    'top': '25%',
+    'display': 'block'
   }, 500);
 }
 
