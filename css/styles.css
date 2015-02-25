@@ -127,12 +127,36 @@ a.navbar-brand {
   height: 80px;
 }
 .slides-body {
-  /*background-color: lightgrey;*/
+  background-color: black;
   height: 700px;
   width: 100%;
 }
+.arrow-up {
+  background-image: url('../images/arrow-up.png');
+  position: absolute;
+  border: 1px solid #C7A865;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  z-index: 99;
+  top: 44%;
+  right: 7%;
+}
+.arrow-down {
+  background-image: url('../images/arrow-down.png');
+  position: absolute;
+  border: 1px solid #C7A865;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  z-index: 99;
+  bottom: 44%;
+  right: 7%;
+}
+
+/* Slide 1 START */
 #slide-01 {
-  position: relative;
+  display: block;
   background-image: url('../images/intersection(2560)(1).jpg');
   background-position: center;
   background-size: cover;
@@ -143,6 +167,16 @@ a.navbar-brand {
   left: 30%;
   top: 20%;
 }
+/* Slide 1 END */
+
+/* Slide 2 START */
+#slide-02 {
+  display: none;
+  background-image: url('../images/black_background_logo(2560_1400)(3).jpg');
+  background-position: center;
+  background-size: cover;
+}
+/* Slide 2 END */
 
 /* Footer START */
 .footer {
