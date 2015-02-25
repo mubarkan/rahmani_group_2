@@ -131,27 +131,27 @@ a.navbar-brand {
   height: 700px;
   width: 100%;
 }
-.arrow-up {
-  background-image: url('../images/arrow-up.png');
+.arrows {
   position: absolute;
-  border: 1px solid #C7A865;
-  height: 36px;
-  width: 36px;
-  border-radius: 50%;
   z-index: 99;
   top: 44%;
   right: 7%;
 }
-.arrow-down {
-  background-image: url('../images/arrow-down.png');
-  position: absolute;
+.arrow-up {
+  background-image: url('../images/arrow-up.png');
   border: 1px solid #C7A865;
+  margin-bottom: 15px;
   height: 36px;
   width: 36px;
   border-radius: 50%;
-  z-index: 99;
-  bottom: 44%;
-  right: 7%;
+}
+.arrow-down {
+  background-image: url('../images/arrow-down.png');
+  border: 1px solid #C7A865;
+  margin-top: 15px;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
 }
 
 /* Slide 1 START */
@@ -165,7 +165,7 @@ a.navbar-brand {
   position: absolute;
   width: 40%;
   left: 30%;
-  top: 20%;
+  top: 25%;
 }
 /* Slide 1 END */
 
