@@ -30,7 +30,6 @@ function nextSlide() {
   if (currentSlideNumber === 1) {
     emptySlideOne();
   } else if (currentSlideNumber === 4 && nextSlideNumber === 1) {
-    console.log("hey");
     populateSlideOne();
   }
 
@@ -51,6 +50,12 @@ function previousSlide() {
     var nextSlideNumber = currentSlideNumber - 1;
   }
   var nextSlideId = "slide-0" + nextSlideNumber.toString();
+
+  if (currentSlideNumber === 1) {
+
+  } else if (currentSlideNumber === 2 && nextSlideNumber === 1) {
+    populateSlideOne();
+  }
 
   $('#' + currentSlideId).fadeOut(400);
   $('#' + currentSlideId).removeClass('active');
