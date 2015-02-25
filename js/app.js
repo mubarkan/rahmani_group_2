@@ -10,14 +10,36 @@ function adjustSlidesHeight() {
   $('#slide-02').css({
     'height': height-180
   });
+  $('#slide-03').css({
+    'height': height-180
+  });
+  $('#slide-03').css({
+    'height': height-180
+  });
 }
 function nextSlide() {
   var currentSlideId = $('.active').attr('id');
   var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
-  if (currentSlideNumber === 2) {
+  if (currentSlideNumber === 4) {
     var nextSlideNumber = 1;
   } else {
     var nextSlideNumber = currentSlideNumber + 1;
+  }
+  var nextSlideId = "slide-0" + nextSlideNumber.toString();
+  console.log(currentSlideId);
+  console.log(nextSlideId);
+  $('#' + currentSlideId).fadeOut(400);
+  $('#' + currentSlideId).removeClass('active');
+  $('#' + nextSlideId).fadeIn(400);
+  $('#' + nextSlideId).addClass('active');
+}
+function previousSlide() {
+  var currentSlideId = $('.active').attr('id');
+  var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
+  if (currentSlideNumber === 1) {
+    var nextSlideNumber = 4;
+  } else {
+    var nextSlideNumber = currentSlideNumber - 1;
   }
   var nextSlideId = "slide-0" + nextSlideNumber.toString();
   console.log(currentSlideId);
@@ -32,5 +54,6 @@ jQuery(document).ready(function() {
 
   adjustSlidesHeight();
   $(window).on('resize', adjustSlidesHeight);
-  $('.arrow-down').on('click', nextSlide);
+  $('.arrow-up').on('click', nextSlide);
+  $('.arrow-down').on('click', previousSlide);
 });

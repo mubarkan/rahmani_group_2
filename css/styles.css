@@ -178,6 +178,24 @@ a.navbar-brand {
 }
 /* Slide 2 END */
 
+/* Slide 3 START */
+#slide-03 {
+  display: none;
+  background-image: url('../images/pie_chart(2560_1400)(5).jpg');
+  background-position: center;
+  background-size: cover;
+}
+/* Slide 3 END */
+
+/* Slide 4 START */
+#slide-04 {
+  display: none;
+  /*background-image: url('../images/pie_chart(2560_1400)(5).jpg');*/
+  background-position: center;
+  background-size: cover;
+}
+/* Slide 4 END */
+
 /* Footer START */
 .footer {
   background-color: #282828;
