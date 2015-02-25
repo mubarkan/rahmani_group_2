@@ -26,12 +26,18 @@ function nextSlide() {
     var nextSlideNumber = currentSlideNumber + 1;
   }
   var nextSlideId = "slide-0" + nextSlideNumber.toString();
-  console.log(currentSlideId);
-  console.log(nextSlideId);
-  $('#' + currentSlideId).fadeOut(400);
-  $('#' + currentSlideId).removeClass('active');
-  $('#' + nextSlideId).fadeIn(400);
-  $('#' + nextSlideId).addClass('active');
+
+  if (currentSlideNumber === 1) {
+    emptySlideOne();
+  }
+
+  setTimeout(function() {
+    $('#' + currentSlideId).fadeOut(400);
+    $('#' + currentSlideId).removeClass('active');
+    $('#' + nextSlideId).fadeIn(400);
+    $('#' + nextSlideId).addClass('active');
+  }, 800);
+
 }
 function previousSlide() {
   var currentSlideId = $('.active').attr('id');
@@ -42,12 +48,17 @@ function previousSlide() {
     var nextSlideNumber = currentSlideNumber - 1;
   }
   var nextSlideId = "slide-0" + nextSlideNumber.toString();
-  console.log(currentSlideId);
-  console.log(nextSlideId);
+
   $('#' + currentSlideId).fadeOut(400);
   $('#' + currentSlideId).removeClass('active');
   $('#' + nextSlideId).fadeIn(400);
   $('#' + nextSlideId).addClass('active');
+}
+function emptySlideOne() {
+  $('#slide-01 img').animate({
+    'top': '22%',
+    'opacity': 'hide'
+  }, 500);
 }
 
 jQuery(document).ready(function() {

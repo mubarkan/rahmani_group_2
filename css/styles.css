@@ -135,7 +135,7 @@ a.navbar-brand {
   position: absolute;
   z-index: 99;
   top: 44%;
-  right: 7%;
+  right: 5%;
 }
 .arrow-up {
   background-image: url('../images/arrow-up.png');
