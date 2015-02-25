@@ -44,6 +44,21 @@ function adjustSlide02Text() {
     'line-height': lineHeight3,
     'margin-bottom': (5*width/1680)
   });
+  $('#fact-6 p').css({
+    'font-size': (25*width/1680)
+  });
+  $('#fact-6').css({
+    'padding': (15*width/1680)
+  });
+  $('#fact-4').css({
+    'background-size': (150*width/1680)
+  });
+  $('#fact-7').css({
+    'background-size': (180*width/1680)
+  });
+  $('#slide-02 button').css({
+    'font-size': (21*width/1680)
+  });
 }
 function nextSlide() {
   adjustSlide02Text();

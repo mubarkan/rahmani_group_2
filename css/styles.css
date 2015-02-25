@@ -272,7 +272,7 @@ a.navbar-brand {
 #slide-02 #fact-6 p {
   color: black;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 25px;
 }
 #slide-02 button {
   position: absolute;
@@ -283,7 +283,7 @@ a.navbar-brand {
   top: 68%;
   left: 60%;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 21px;
   color: black;
 }
 #slide-02 #fact-7 {
