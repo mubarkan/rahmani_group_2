@@ -109,13 +109,13 @@ function previousSlide() {
 }
 function emptySlideOne() {
   $('#slide-01 img').animate({
-    'top': '18%',
+    'top': '27%',
     'opacity': 'hide'
   }, 500);
 }
 function populateSlideOne() {
   $('#slide-01 img').css({
-    'top': '20%',
+    'top': '30%',
     'display': 'block'
   }, 500);
 }
