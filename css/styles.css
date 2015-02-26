@@ -67,10 +67,13 @@ a.navbar-brand {
 /* dropdown START */
 .navbar-default .navbar-nav .open .dropdown-menu {
   background-color: rgba(164,164,164,0.47);
+  padding: 15px;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: white;
   font-weight: 300;
+  font-size: 0.9em;
+  text-align: right;
 }
 .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
   color: #C7A865;
