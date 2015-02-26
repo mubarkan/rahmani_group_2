@@ -2,19 +2,19 @@ function adjustSlidesHeight() {
   var height = $(window).height();
   console.log(height);
   $('.slides-body').css({
-    'height': height-180
+    'height': height-265
   });
   $('#slide-01').css({
-    'height': height-180
+    'height': height-265
   });
   $('#slide-02').css({
-    'height': height-180
+    'height': height-265
   });
   $('#slide-03').css({
-    'height': height-180
+    'height': height-265
   });
   $('#slide-04').css({
-    'height': height-180
+    'height': height-265
   });
 }
 function adjustSlide02Text() {

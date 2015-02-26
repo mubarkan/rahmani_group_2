@@ -170,6 +170,9 @@ a.navbar-brand {
   width: 36px;
   border-radius: 50%;
 }
+.arrow-up:hover, .arrow-down:hover {
+  border: 1px solid #FFFFFF;
+}
 
 /* Slide 1 START */
 #slide-01 {
