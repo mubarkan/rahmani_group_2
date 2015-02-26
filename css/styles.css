@@ -68,9 +68,13 @@ a.navbar-brand {
 .navbar-default .navbar-nav .open .dropdown-menu {
   background-color: rgba(164,164,164,0.47);
 }
-.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: white;
   font-weight: 300;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  color: #C7A865;
+  background: inherit;
 }
 /* dropdown END
 /* caret */
