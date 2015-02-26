@@ -180,6 +180,7 @@ a.navbar-brand {
   position: relative;
 }
 #slide-02 .rg-facts {
+  display: none;
   position: absolute;
   top: 10%;
   width: 100%;
@@ -189,6 +190,7 @@ a.navbar-brand {
   font-size: 40px;
 }
 #slide-02 #fact-1 {
+  display: none;
   border: 1px solid #C7A865;
   position: absolute;
   padding: 15px;
@@ -204,6 +206,7 @@ a.navbar-brand {
   line-height: 30px;
 }
 #slide-02 #fact-2 {
+  display: none;
   border: 1px solid #C7A865;
   background-image: url('../images/1000-plus.jpg');
   background-size: 85%;
@@ -215,6 +218,7 @@ a.navbar-brand {
   height: 15%;
 }
 #slide-02 #fact-3 {
+  display: none;
   border: 1px solid #C7A865;
   position: absolute;
   top: 40%;
@@ -232,6 +236,7 @@ a.navbar-brand {
   margin-bottom: 0;
 }
 #slide-02 #fact-4 {
+  display: none;
   /*border: 1px solid #C7A865;*/
   background-image: url('../images/founded-2003.png');
   background-size: 100%;
@@ -244,6 +249,7 @@ a.navbar-brand {
   height: 11%;
 }
 #slide-02 #fact-5 {
+  display: none;
   border-left: 1px solid #C7A865;
   position: absolute;
   padding: 0 0 0 10px;
@@ -260,6 +266,7 @@ a.navbar-brand {
   line-height: 26px;
 }
 #slide-02 #fact-6 {
+  display: none;
   border: 1px solid #C7A865;
   background-color: #C7A865;
   position: absolute;
@@ -275,6 +282,7 @@ a.navbar-brand {
   font-size: 25px;
 }
 #slide-02 button {
+  display: none;
   position: absolute;
   background-color: #61605C;
   border: 1px solid #61605C;
@@ -287,6 +295,7 @@ a.navbar-brand {
   color: black;
 }
 #slide-02 #fact-7 {
+  display: none;
   /*border: 1px solid #C7A865;*/
   background-image: url('../images/2000-plus.png');
   background-size: 90%;

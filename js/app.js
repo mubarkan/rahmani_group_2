@@ -13,7 +13,7 @@ function adjustSlidesHeight() {
   $('#slide-03').css({
     'height': height-180
   });
-  $('#slide-03').css({
+  $('#slide-04').css({
     'height': height-180
   });
 }
@@ -61,7 +61,7 @@ function adjustSlide02Text() {
   });
 }
 function nextSlide() {
-  adjustSlide02Text();
+
   var currentSlideId = $('.active').attr('id');
   var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
   if (currentSlideNumber === 4) {
@@ -71,10 +71,10 @@ function nextSlide() {
   }
   var nextSlideId = "slide-0" + nextSlideNumber.toString();
 
-  if (currentSlideNumber === 1) {
+  if (currentSlideNumber === 1 && nextSlideNumber === 2) {
+    adjustSlide02Text();
     emptySlideOne();
   } else if (currentSlideNumber === 4 && nextSlideNumber === 1) {
-    populateSlideOne();
   }
 
   setTimeout(function() {
@@ -83,6 +83,12 @@ function nextSlide() {
     $('#' + nextSlideId).fadeIn(400);
     $('#' + nextSlideId).addClass('active');
   }, 800);
+
+  if (currentSlideNumber === 1 && nextSlideNumber === 2) {
+    populateSlideTwo();
+  } else if (currentSlideNumber === 4 && nextSlideNumber === 1) {
+    populateSlideOne();
+  }
 
 }
 function previousSlide() {
@@ -107,18 +113,48 @@ function previousSlide() {
   $('#' + nextSlideId).fadeIn(400);
   $('#' + nextSlideId).addClass('active');
 }
-function emptySlideOne() {
-  $('#slide-01 img').animate({
-    'top': '27%',
-    'opacity': 'hide'
-  }, 500);
-}
 function populateSlideOne() {
   $('#slide-01 img').css({
     'top': '30%',
     'display': 'block'
   }, 500);
 }
+function emptySlideOne() {
+  $('#slide-01 img').animate({
+    'top': '27%',
+    'opacity': 'hide'
+  }, 500);
+}
+function populateSlideTwo() {
+
+  $('.rg-facts').fadeIn(3000);
+
+  setTimeout(function() {
+    $('#slide-02 #fact-1').fadeIn(1000);
+  }, 1000);
+  setTimeout(function() {
+    $('#slide-02 #fact-4').fadeIn(1000);
+  }, 1200);
+  setTimeout(function() {
+    $('#slide-02 #fact-2').fadeIn(1000);
+  }, 1400);
+  setTimeout(function() {
+    $('#slide-02 #fact-5').fadeIn(1000);
+  }, 1600);
+  setTimeout(function() {
+    $('#slide-02 #fact-3').fadeIn(1000);
+  }, 1800);
+  setTimeout(function() {
+    $('#slide-02 #fact-6').fadeIn(1000);
+  }, 2000);
+  setTimeout(function() {
+    $('#slide-02 #fact-7').fadeIn(1000);
+  }, 2200);
+  setTimeout(function() {
+    $('#slide-02 button').fadeIn(1000);
+  }, 2400);
+}
+
 
 jQuery(document).ready(function() {
 
