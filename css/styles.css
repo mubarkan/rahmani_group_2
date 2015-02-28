@@ -163,7 +163,7 @@ a.navbar-brand {
   border-radius: 50%;
 }
 .arrow-up:hover {
-  background-image: url('../images/arrow-up(hover)(1).png');
+  background-image: url('../images/arrow-up(hover)(2).png');
   border: 1px solid #F3E1BC;
 }
 .arrow-down {
@@ -175,7 +175,7 @@ a.navbar-brand {
   border-radius: 50%;
 }
 .arrow-down:hover {
-  background-image: url('../images/arrow-down(hover)(1).png');
+  background-image: url('../images/arrow-down(hover)(2).png');
   border: 1px solid #F3E1BC;
 }
 
