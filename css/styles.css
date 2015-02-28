@@ -32,7 +32,7 @@ a.navbar-brand {
 .navbar-default {
     background-color: #282828; /* original #F8F8F8 */
     border-color: #E7E7E7;
-    background-image: url('../images/hex_pattern_footer(2560)(1).png');
+    background-image: url('../images/hex_pattern(3).png');
     background-size: 100%;
 }
 /* title */
@@ -345,12 +345,15 @@ a.navbar-brand {
 /* Slide 4 START */
 #slide-04 {
   display: none;
-  /*background-image: url('../images/pie_chart(2560_1400)(5).jpg');*/
+  background-image: url('../images/oil_pump(1).jpg');
   background-position: center;
   background-size: cover;
 }
 /* Slide 4 END */
-
+.bottom-offset {
+  border: 1px solid red;
+  height: 185px;
+}
 /* Footer START */
 .footer {
   background-color: #282828;
