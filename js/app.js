@@ -25,7 +25,7 @@ function adjustSlide02Text() {
   var lineHeight3 = (26*height/700).toString() + "px";
   console.log("inside adjustSlide02Text");
   console.log(height);
-  $('.rg-facts').css({
+  $('.slide-caption').css({
     'font-size': (40*width/1680)
   });
   $('#fact-1 p').css({
@@ -149,7 +149,7 @@ function emptySlideOne() {
 }
 function populateSlideTwo() {
 
-  $('.rg-facts').fadeIn(3000);
+  $('#slide-02 .slide-caption').fadeIn(3000);
 
   setTimeout(function() {
     $('#slide-02 #fact-1').fadeIn(1000);
@@ -177,6 +177,10 @@ function populateSlideTwo() {
   }, 2400);
 }
 function emptySlideTwo() {
+  $('#slide-02 .slide-caption').animate({
+    'top': '8%',
+    'opacity': 'hide'
+  }, 500);
   $('#slide-02 #fact-1').animate({
     'top': '23%',
     'opacity': 'hide'

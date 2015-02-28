@@ -203,7 +203,7 @@ a.navbar-brand {
   background-size: cover;
   position: relative;
 }
-#slide-02 .rg-facts {
+#slide-02 .slide-caption {
   display: none;
   position: absolute;
   top: 10%;
@@ -348,12 +348,55 @@ a.navbar-brand {
   background-image: url('../images/oil_pump(1).jpg');
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+#slide-04 .slide-caption {
+  /*display: none;*/
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 40px;
+}
+.year-millions {
+  border: 1px solid #C7A865;
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  height: 17%;
+  width: 13%;
+}
+.year {
+  background-color: #C7A865;
+  height: 27.6%;
+  width: 100%;
+  padding-top: 3px
+}
+.year p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  margin: 0;
+}
+.num-millions {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 44px;
+  color: #C7A865;
+  text-align: center;
+  margin: 0;
+  margin-top: 8px;
+}
+.million {
+  font-weight: 400;
+  font-size: 20px;
+  color: #C7A865;
+  text-align: center;
 }
 /* Slide 4 END */
-.bottom-offset {
-  border: 1px solid red;
-  height: 185px;
-}
+
 /* Footer START */
 .footer {
   background-color: #282828;
