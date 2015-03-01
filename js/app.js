@@ -105,6 +105,8 @@ function nextSlide() {
     emptySlideOne();
   } else if (currentSlideNumber === 2 && nextSlideNumber === 3) {
     emptySlideTwo();
+  } else if (currentSlideNumber === 3 && nextSlideNumber === 4) {
+    adjustSlide04Text();
   }
 
   setTimeout(function() {
@@ -136,11 +138,11 @@ function previousSlide() {
   var nextSlideId = "slide-0" + nextSlideNumber.toString();
 
   if (currentSlideNumber === 1 && nextSlideNumber === 4) {
+    adjustSlide04Text();
     emptySlideOne();
   } else if (currentSlideNumber === 2 && nextSlideNumber === 1) {
     emptySlideTwo();
   } else if (currentSlideNumber === 3 && nextSlideNumber === 2) {
-
   }
 
   setTimeout(function() {
