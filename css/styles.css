@@ -417,6 +417,13 @@ a.navbar-brand {
   top: 32%;
   left: 33%;
 }
+#slide-04 #year-2013-trans p {
+  color: #C7A865;
+  text-align: center;
+  position: relative;
+  top: 75%;
+  font-size: 14px;
+}
 #slide-04 #year-2013-fuel {
   /*display: none;*/
   /*border: 1px solid red;*/
@@ -429,6 +436,13 @@ a.navbar-brand {
   height: 55%;
   top: 32%;
   left: 41%;
+}
+#slide-04 #year-2013-fuel p {
+  color: #C7A865;
+  text-align: center;
+  position: relative;
+  top: 75%;
+  font-size: 14px;
 }
 #slide-04 #year-2014-trans {
   /*display: none;*/
@@ -443,6 +457,13 @@ a.navbar-brand {
   top: 32%;
   right: 41%;
 }
+#slide-04 #year-2014-trans p {
+  color: #C7A865;
+  text-align: center;
+  position: relative;
+  top: 87%;
+  font-size: 14px;
+}
 #slide-04 #year-2014-fuel {
   /*display: none;*/
   /*border: 1px solid red;*/
@@ -455,6 +476,13 @@ a.navbar-brand {
   height: 55%;
   top: 32%;
   right: 33%;
+}
+#slide-04 #year-2014-fuel p {
+  color: #C7A865;
+  text-align: center;
+  position: relative;
+  top: 61%;
+  font-size: 13px;
 }
 #slide-04 .trans-fuel-projects {
   /*border: 1px solid red;*/

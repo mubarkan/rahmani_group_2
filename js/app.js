@@ -88,6 +88,9 @@ function adjustSlide04Text() {
   $('#slide-04 .trans-fuel-projects p').css({
     'font-size': (12*width/1680)
   });
+  $('#year-2013-trans p, #year-2013-fuel p, #year-2014-trans p, #year-2014-fuel p').css({
+    'font-size': (13*width/1680)
+  });
 }
 function nextSlide() {
 
