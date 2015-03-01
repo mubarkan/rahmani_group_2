@@ -63,20 +63,27 @@ function adjustSlide02Text() {
 function adjustSlide04Text() {
   var width = $(window).width();
   var height = $('.slides-body').height();
-  var lineHeight1 = (30*height/700).toString() + "px";
-  var lineHeight2 = (28*height/700).toString() + "px";
-  var lineHeight3 = (26*height/700).toString() + "px";
-  console.log("inside adjustSlide02Text");
+  var lineHeight1 = (25*height/700).toString() + "px";
+  var lineHeight2 = (44*height/700).toString() + "px";
+  console.log("inside adjustSlide04Text");
   console.log(height);
   $('.slide-caption').css({
     'font-size': (40*width/1680)
   });
-  $('#fact-1 p').css({
-    'font-size': (25*width/1680),
+  $('#slide-04 .year p').css({
+    'font-size': (18*width/1680),
     'line-height': lineHeight1
   });
-  $('#fact-1').css({
-    'padding': (15*width/1680)
+  $('#slide-04 .year').css({
+    'padding-top': (3*height/700)
+  });
+  $('#slide-04 .num-millions').css({
+    'font-size': (50*width/1680),
+    'margin-top': (8*height/700),
+    'line-height': lineHeight2
+  });
+  $('#slide-04 .million').css({
+    'font-size': (20*width/1680)
   });
 }
 function nextSlide() {
