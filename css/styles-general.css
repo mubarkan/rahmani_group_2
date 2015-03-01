@@ -1,0 +1,43 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: #EDF2F3;
+  color: #8B6B26;
+}
+h1 {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+h3 {
+  font-weight: 600;
+}
+ul {
+  list-style-type: square;
+}
+/* color ul squares START */
+.general-ul li {
+  list-style: none;
+}
+.general-ul li:before {
+  /* For a round bullet */
+  /*content: '\2022';*/
+  /* For a square bullet */
+  content:'\25A0';
+  display: block;
+  position: relative;
+  max-width: 0;
+  max-height: 0;
+  left: -20px;
+  top: -2px;
+  color: #8B6B26;
+  font-size: 1.1em;
+}
+/* color ul squares END */
+
+p, li {
+  color: #878787;
+  font-size: 1.1em;
+  text-align: justify;
+}
+
