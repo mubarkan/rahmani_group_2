@@ -211,52 +211,15 @@ function populateSlideTwo() {
   }, 2400);
 }
 function emptySlideTwo() {
-  $('#slide-02 .slide-caption').animate({
-    'top': '8%',
-    'opacity': 'hide'
-  }, 500);
-  $('#slide-02 #fact-1').animate({
-    'top': '23%',
-    'opacity': 'hide'
-  }, 500);
-  $('#slide-02 #fact-2').animate({
-    'top': '23%',
-    'opacity': 'hide'
-  }, 500);
-  $('#slide-02 #fact-3').animate({
-    'top': '38%',
-    'opacity': 'hide'
-  }, 500);
-  $('#slide-02 #fact-4').animate({
-    'top': '43%',
-    'opacity': 'hide'
-  }, 500);
-  $('#slide-02 #fact-5').animate({
-    'top': '43%',
-    'opacity': 'hide'
-  }, 500);
-  $('#slide-02 #fact-6').animate({
-    'top': '58%',
-    'opacity': 'hide'
-  }, 500);
-  $('#slide-02 #fact-7').animate({
-    'top': '58%',
-    'opacity': 'hide'
-  }, 500);
-  $('#slide-02 button').animate({
-    'top': '66%',
-    'opacity': 'hide'
-  }, 500);
-  setTimeout(function() {
-  $('#slide-02 #fact-1').css({'top': '25%'});
-  $('#slide-02 #fact-2').css({'top': '25%'});
-  $('#slide-02 #fact-3').css({'top': '40%'});
-  $('#slide-02 #fact-4').css({'top': '45%'});
-  $('#slide-02 #fact-5').css({'top': '45%'});
-  $('#slide-02 #fact-6').css({'top': '60%'});
-  $('#slide-02 #fact-7').css({'top': '60%'});
-  $('#slide-02 button').css({'top': '68%'});
-  }, 1500);
+  $('#slide-02 .slide-caption').fadeOut();
+  $('#slide-02 #fact-1').fadeOut();
+  $('#slide-02 #fact-2').fadeOut();
+  $('#slide-02 #fact-3').fadeOut();
+  $('#slide-02 #fact-4').fadeOut();
+  $('#slide-02 #fact-5').fadeOut();
+  $('#slide-02 #fact-6').fadeOut();
+  $('#slide-02 #fact-7').fadeOut();
+  $('#slide-02 button').fadeOut();
 }
 
 
