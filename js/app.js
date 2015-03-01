@@ -60,6 +60,25 @@ function adjustSlide02Text() {
     'font-size': (21*width/1680)
   });
 }
+function adjustSlide04Text() {
+  var width = $(window).width();
+  var height = $('.slides-body').height();
+  var lineHeight1 = (30*height/700).toString() + "px";
+  var lineHeight2 = (28*height/700).toString() + "px";
+  var lineHeight3 = (26*height/700).toString() + "px";
+  console.log("inside adjustSlide02Text");
+  console.log(height);
+  $('.slide-caption').css({
+    'font-size': (40*width/1680)
+  });
+  $('#fact-1 p').css({
+    'font-size': (25*width/1680),
+    'line-height': lineHeight1
+  });
+  $('#fact-1').css({
+    'padding': (15*width/1680)
+  });
+}
 function nextSlide() {
 
   var currentSlideId = $('.active').attr('id');
@@ -231,6 +250,7 @@ jQuery(document).ready(function() {
   adjustSlidesHeight();
   $(window).on('resize', adjustSlidesHeight);
   $(window).on('resize', adjustSlide02Text);
+  $(window).on('resize', adjustSlide04Text);
   $('.arrow-up').on('click', nextSlide);
   $('.arrow-down').on('click', previousSlide);
 });

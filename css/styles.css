@@ -360,27 +360,35 @@ a.navbar-brand {
   font-weight: 300;
   font-size: 40px;
 }
-.year-millions {
+#slide-04 #year-2013 {
   border: 1px solid #C7A865;
   position: absolute;
-  top: 30%;
+  top: 24%;
   left: 33%;
   height: 17%;
   width: 13%;
 }
-.year {
+#slide-04 #year-2014 {
+  border: 1px solid #C7A865;
+  position: absolute;
+  top: 24%;
+  right: 33%;
+  height: 17%;
+  width: 13%;
+}
+#slide-04 .year {
   background-color: #C7A865;
   height: 27.6%;
   width: 100%;
   padding-top: 3px
 }
-.year p {
+#slide-04 .year p {
   text-align: center;
   font-weight: 400;
   font-size: 18px;
   margin: 0;
 }
-.num-millions {
+#slide-04 .num-millions {
   font-weight: 800;
   font-size: 50px;
   line-height: 44px;
@@ -389,11 +397,63 @@ a.navbar-brand {
   margin: 0;
   margin-top: 8px;
 }
-.million {
+#slide-04 .million {
   font-weight: 400;
   font-size: 20px;
   color: #C7A865;
   text-align: center;
+}
+#slide-04 #year-2013-trans {
+  /*display: none;*/
+  /*border: 1px solid red;*/
+  background-image: url('../images/2013-trans-bar(1).png');
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5%;
+  height: 55%;
+  top: 35%;
+  left: 33%;
+}
+#slide-04 #year-2013-fuel {
+  /*display: none;*/
+  /*border: 1px solid red;*/
+  background-image: url('../images/2013-fuel-bar(1).png');
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5%;
+  height: 55%;
+  top: 35%;
+  left: 41%;
+}
+#slide-04 #year-2014-trans {
+  /*display: none;*/
+  /*border: 1px solid red;*/
+  background-image: url('../images/2014-trans-bar(1).png');
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5%;
+  height: 55%;
+  top: 35%;
+  right: 41%;
+}
+#slide-04 #year-2014-fuel {
+  /*display: none;*/
+  /*border: 1px solid red;*/
+  background-image: url('../images/2014-fuel-bar(1).png');
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 5%;
+  height: 55%;
+  top: 35%;
+  right: 33%;
 }
 /* Slide 4 END */
 
