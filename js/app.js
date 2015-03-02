@@ -16,6 +16,9 @@ function adjustSlidesHeight() {
   $('#slide-04').css({
     'height': height-265
   });
+  $('#slide-05').css({
+    'height': height-265
+  });
 }
 function adjustSlide02Text() {
   var width = $(window).width();
@@ -96,7 +99,7 @@ function nextSlide() {
 
   var currentSlideId = $('.active').attr('id');
   var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
-  if (currentSlideNumber === 4) {
+  if (currentSlideNumber === 5) {
     var nextSlideNumber = 1;
   } else {
     var nextSlideNumber = currentSlideNumber + 1;
@@ -134,7 +137,7 @@ function previousSlide() {
   var currentSlideId = $('.active').attr('id');
   var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
   if (currentSlideNumber === 1) {
-    var nextSlideNumber = 4;
+    var nextSlideNumber = 5;
   } else {
     var nextSlideNumber = currentSlideNumber - 1;
   }

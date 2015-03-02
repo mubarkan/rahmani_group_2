@@ -517,6 +517,16 @@ a.navbar-brand {
 }
 /* Slide 4 END */
 
+/* Slide 5 START */
+#slide-05 {
+  display: none;
+  background-image: url('../images/projects-contracts_wheel(1).jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/* Slide 5 END */
+
 /* Footer START */
 .footer {
   background-color: #282828;
