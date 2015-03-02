@@ -336,9 +336,31 @@ a.navbar-brand {
 /* Slide 3 START */
 #slide-03 {
   display: none;
-  background-image: url('../images/pie(2560)(1).jpg');
+  background-image: url('../images/group_structure_bg(1).jpg');
   background-position: center;
   background-size: cover;
+  position: relative;
+}
+#slide-03 img[src="images/group_structure_wheel(1).png"] {
+  width: 25%;
+  position: absolute;
+  left: 37.5%;
+  top: 10%;
+}
+#slide-03 .group-structure-heading {
+  border: 1px solid red;
+  width: 12%;
+  height: 13%;
+  position: absolute;
+  left: 44%;
+  top: 32%;
+}
+#slide-03 .group-structure-heading p {
+  color: white;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  margin: 0;
 }
 /* Slide 3 END */
 

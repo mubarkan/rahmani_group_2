@@ -63,6 +63,22 @@ function adjustSlide02Text() {
     'font-size': (21*width/1680)
   });
 }
+function adjustSlide03Text() {
+  var width = $(window).width();
+  var height = $('.slides-body').height();
+  var lineHeight1 = (48*height/713).toString() + "px";
+  var top1 = ((((height-(width*0.25))/4)/height)*100).toString() + "%";
+  console.log(top1);
+  console.log("inside adjustSlide03Text");
+  $('#slide-03 p').css({
+    'font-size': (32*width/1680),
+    'line-height': lineHeight1
+  });
+  $('#slide-03 img[src="images/group_structure_wheel(1).png"]').css({
+    'top': top1
+  });
+
+}
 function adjustSlide04Text() {
   var width = $(window).width();
   var height = $('.slides-body').height();
@@ -232,6 +248,7 @@ jQuery(document).ready(function() {
   adjustSlidesHeight();
   $(window).on('resize', adjustSlidesHeight);
   $(window).on('resize', adjustSlide02Text);
+  $(window).on('resize', adjustSlide03Text);
   $(window).on('resize', adjustSlide04Text);
   $('.arrow-up').on('click', nextSlide);
   $('.arrow-down').on('click', previousSlide);
