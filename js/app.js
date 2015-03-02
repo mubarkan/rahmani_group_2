@@ -113,6 +113,7 @@ function nextSlide() {
     emptySlideTwo();
   } else if (currentSlideNumber === 3 && nextSlideNumber === 4) {
     adjustSlide04Text();
+  } else if (currentSlideNumber === 4 && nextSlideNumber === 5) {
   }
 
   setTimeout(function() {
@@ -127,7 +128,7 @@ function nextSlide() {
 
   if (currentSlideNumber === 1 && nextSlideNumber === 2) {
     populateSlideTwo();
-  } else if (currentSlideNumber === 4 && nextSlideNumber === 1) {
+  } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
     populateSlideOne();
   }
 
