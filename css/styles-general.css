@@ -4,6 +4,13 @@ body {
   background-color: #EDF2F3;
   color: #8B6B26;
 }
+.offset:before {
+  display: block;
+  content: " ";
+  height: 80px;      /* Give height of your fixed element */
+  margin-top: -80px; /* Give negative margin of your fixed element */
+  visibility: hidden;
+}
 h1 {
   border-bottom: 1px solid lightgrey;
   padding-bottom: 15px;
