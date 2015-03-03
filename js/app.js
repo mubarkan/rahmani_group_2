@@ -67,17 +67,17 @@ function adjustSlide03Text() {
   var width = $(window).width();
   var height = $('.slides-body').height();
   var width1a = height*0.56;
-  var width1b = width1a.toString() + "px"
+  var width1b = width1a.toString() + "px";
   var left1 = ((((width-width1a)/2)/width)*100).toString() + "%";
-  // var top1 = .toString() + "%";
+  var lineHeight1 = (48*height/700).toString() + "px";
   console.log("inside adjustSlide03Text");
   console.log("slide width (width): " + width);
   console.log("width1: " + width1b);
   console.log("left: " + left1);
   console.log("height: " + height);
   $('#slide-03 p').css({
-    'font-size': (32*width/1680)
-    // 'line-height': lineHeight1
+    'font-size': (32*width/1680),
+    'line-height': lineHeight1
   });
   $('#slide-03 img[src="images/group_structure_wheel(1).png"]').css({
     'width': width1b,

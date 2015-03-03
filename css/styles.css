@@ -348,7 +348,7 @@ a.navbar-brand {
   top: 11%;
 }
 #slide-03 .group-structure-heading {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   width: 12%;
   height: 13%;
   position: absolute;
