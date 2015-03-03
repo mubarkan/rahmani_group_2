@@ -68,19 +68,21 @@ function adjustSlide03Text() {
   var height = $('.slides-body').height();
   var width1a = height*0.58;
   var width1b = width1a.toString() + "px";
-  var width2a = width1a*0.54;
+  var width2a = width1a*0.60;
   var width2b = width2a.toString() + "px"
-  var width3a = width1a*0.20;
+  var width3a = width1a*0.195;
   var width3b = width3a.toString() + "px"
+  var width4a = width1a*0.145;
+  var width4b = width4a.toString() + "px"
+  var width5a = width1a*0.30;
+  var width5b = width5a.toString() + "px"
   var left1 = ((((width - width1a)/2)/width)*100).toString() + "%";
   var left2 = (((((width/2) - width2a) - width1a*0.32)/width)*100).toString() + "%";
   var left3 = (((((width/2) - width3a) - width1a*0.07)/width)*100).toString() + "%";
+  var left4 = (((((width/2) - width4a) + width1a*0.278)/width)*100).toString() + "%";
+  var left5 = (((((width/2) - width5a) + width1a*0.469)/width)*100).toString() + "%";
   var lineHeight1 = (48*height/700).toString() + "px";
   console.log("inside adjustSlide03Text");
-  console.log("slide width (width): " + width);
-  console.log("width1: " + width1b);
-  console.log("left: " + left1);
-  console.log("height: " + height);
   $('#slide-03 p').css({
     'font-size': (32*width/1680),
     'line-height': lineHeight1
@@ -96,6 +98,14 @@ function adjustSlide03Text() {
   $('#slide-03 img[src="images/line_02.png"]').css({
     'width': width3b,
     'left': left3
+  });
+  $('#slide-03 img[src="images/line_03.png"]').css({
+    'width': width4b,
+    'left': left4
+  });
+  $('#slide-03 img[src="images/line_04.png"]').css({
+    'width': width5b,
+    'left': left5
   });
 }
 function adjustSlide04Text() {
