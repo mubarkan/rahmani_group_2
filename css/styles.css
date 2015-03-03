@@ -347,6 +347,20 @@ a.navbar-brand {
   left: 37.5%;
   top: 11%;
 }
+#slide-03 img[src="images/line_01.png"] {
+  /*border: 1px solid red;*/
+  width: 13%;
+  position: absolute;
+  left: 29%;
+  top: 52%;
+}
+#slide-03 img[src="images/line_02.png"] {
+  /*border: 1px solid red;*/
+  width: 13%;
+  position: absolute;
+  left: 29%;
+  top: 61%;
+}
 #slide-03 .group-structure-heading {
   /*border: 1px solid red;*/
   width: 12%;

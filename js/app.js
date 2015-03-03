@@ -66,9 +66,15 @@ function adjustSlide02Text() {
 function adjustSlide03Text() {
   var width = $(window).width();
   var height = $('.slides-body').height();
-  var width1a = height*0.56;
+  var width1a = height*0.58;
   var width1b = width1a.toString() + "px";
-  var left1 = ((((width-width1a)/2)/width)*100).toString() + "%";
+  var width2a = width1a*0.54;
+  var width2b = width2a.toString() + "px"
+  var width3a = width1a*0.20;
+  var width3b = width3a.toString() + "px"
+  var left1 = ((((width - width1a)/2)/width)*100).toString() + "%";
+  var left2 = (((((width/2) - width2a) - width1a*0.32)/width)*100).toString() + "%";
+  var left3 = (((((width/2) - width3a) - width1a*0.07)/width)*100).toString() + "%";
   var lineHeight1 = (48*height/700).toString() + "px";
   console.log("inside adjustSlide03Text");
   console.log("slide width (width): " + width);
@@ -83,7 +89,14 @@ function adjustSlide03Text() {
     'width': width1b,
     'left': left1
   });
-
+  $('#slide-03 img[src="images/line_01.png"]').css({
+    'width': width2b,
+    'left': left2
+  });
+  $('#slide-03 img[src="images/line_02.png"]').css({
+    'width': width3b,
+    'left': left3
+  });
 }
 function adjustSlide04Text() {
   var width = $(window).width();
@@ -132,6 +145,7 @@ function nextSlide() {
     adjustSlide02Text();
     emptySlideOne();
   } else if (currentSlideNumber === 2 && nextSlideNumber === 3) {
+    adjustSlide03Text();
     emptySlideTwo();
   } else if (currentSlideNumber === 3 && nextSlideNumber === 4) {
     adjustSlide04Text();
