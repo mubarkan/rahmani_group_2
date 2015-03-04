@@ -471,6 +471,21 @@ a.navbar-brand {
   top: 80.1%;
   left: 68%;
 }
+#slide-03 #one-two-percent {
+  position: absolute;
+  top: 64.7%;
+  left: 64.3%;
+}
+#slide-03 #one-two-percent-one {
+  position: absolute;
+  top: 65.9%;
+  left: 70%;
+}
+#slide-03 #one-two-percent-two {
+  position: absolute;
+  top: 68.1%;
+  left: 70%;
+}
 /* Slide 3 END */
 
 /* Slide 4 START */
