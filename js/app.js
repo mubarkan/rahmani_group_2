@@ -196,6 +196,21 @@ function adjustSlide03Text() {
     'font-size': width1a*0.045,
     'left': (width/2) + width1a*0.85
   });
+  $('#slide-03 #one-percent').css({
+    'top': (width1a - height*0.08),
+    'font-size': width1a*0.108,
+    'left': (width/2) + width1a*0.48
+  });
+  $('#slide-03 #one-percent-one').css({
+    'top': (width1a - height*0.067),
+    'font-size': width1a*0.045,
+    'left': (width/2) + width1a*0.75
+  });
+  $('#slide-03 #one-percent-two').css({
+    'top': (width1a - height*0.04),
+    'font-size': width1a*0.045,
+    'left': (width/2) + width1a*0.75
+  });
 
 }
 function adjustSlide04Text() {
