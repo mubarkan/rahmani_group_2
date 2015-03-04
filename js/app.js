@@ -391,26 +391,64 @@ function populateSlideThree() {
     $('#slide-03 img[src="images/group_structure_wheel(1).png"]').fadeIn(1000);
   }, 1000);
   setTimeout(function() {
-    $('#slide-03 img[src="images/line_01.png"]').fadeIn(1000);
-  }, 1200);
+    $('#slide-03 img[src="images/line_01.png"]').slideDown(1000);
+  }, 1100);
   setTimeout(function() {
     $('#slide-03 #seventy-six-percent').fadeIn(1000);
-  }, 1400);
+  }, 1200);
   setTimeout(function() {
     $('#slide-03 #seventy-six-percent-one').fadeIn(1000);
     $('#slide-03 #seventy-six-percent-two').fadeIn(1000);
-  }, 1600);
+  }, 1300);
   setTimeout(function() {
-    $('#slide-03 img[src="images/line_02.png"]').fadeIn(1000);
-  }, 1800);
+    $('#slide-03 img[src="images/line_02.png"]').slideDown(1000);
+  }, 1400);
   setTimeout(function() {
     $('#slide-03 #seventeen-percent').fadeIn(1000);
-  }, 2000);
+  }, 1500);
   setTimeout(function() {
     $('#slide-03 #seventeen-percent-one').fadeIn(1000);
     $('#slide-03 #seventeen-percent-two').fadeIn(1000);
+  }, 1600);
+  setTimeout(function() {
+    $('#slide-03 img[src="images/line_03.png"]').slideDown(1000);
+  }, 1700);
+  setTimeout(function() {
+    $('#slide-03 #two-four-percent').fadeIn(1000);
+  }, 1800);
+  setTimeout(function() {
+    $('#slide-03 #two-four-percent-one').fadeIn(1000);
+  }, 1900);
+  setTimeout(function() {
+    $('#slide-03 img[src="images/line_04.png"]').slideDown(1000);
+  }, 2000);
+  setTimeout(function() {
+    $('#slide-03 #two-four-2-percent').fadeIn(1000);
+  }, 2100);
+  setTimeout(function() {
+    $('#slide-03 #two-four-2-percent-one').fadeIn(1000);
+    $('#slide-03 #two-four-2-percent-two').fadeIn(1000);
   }, 2200);
-
+  setTimeout(function() {
+    $('#slide-03 img[src="images/line_05.png"]').slideDown(1000);
+  }, 2300);
+  setTimeout(function() {
+    $('#slide-03 #one-two-percent').fadeIn(1000);
+  }, 2400);
+  setTimeout(function() {
+    $('#slide-03 #one-two-percent-one').fadeIn(1000);
+    $('#slide-03 #one-two-percent-two').fadeIn(1000);
+  }, 2500);
+  setTimeout(function() {
+    $('#slide-03 img[src="images/line_06.png"]').slideDown(1000);
+  }, 2600);
+  setTimeout(function() {
+    $('#slide-03 #one-percent').fadeIn(1000);
+  }, 2700);
+  setTimeout(function() {
+    $('#slide-03 #one-percent-one').fadeIn(1000);
+    $('#slide-03 #one-percent-two').fadeIn(1000);
+  }, 2800);
 }
 
 

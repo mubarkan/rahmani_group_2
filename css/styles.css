@@ -382,6 +382,7 @@ a.navbar-brand {
 }
 #slide-03 img[src="images/line_03.png"] {
   /*border: 1px solid red;*/
+  display: none;
   width: 13%;
   position: absolute;
   left: 29%;
@@ -389,6 +390,7 @@ a.navbar-brand {
 }
 #slide-03 img[src="images/line_04.png"] {
   /*border: 1px solid red;*/
+  display: none;
   width: 13%;
   position: absolute;
   left: 29%;
@@ -396,6 +398,7 @@ a.navbar-brand {
 }
 #slide-03 img[src="images/line_05.png"] {
   /*border: 1px solid red;*/
+  display: none;
   width: 13%;
   position: absolute;
   left: 29%;
@@ -403,6 +406,7 @@ a.navbar-brand {
 }
 #slide-03 img[src="images/line_06.png"] {
   /*border: 1px solid red;*/
+  display: none;
   width: 13%;
   position: absolute;
   left: 29%;
@@ -457,56 +461,67 @@ a.navbar-brand {
   left: 43.3%;
 }
 #slide-03 #two-four-percent {
+  display: none;
   position: absolute;
   top: 87.5%;
   left: 55.8%;
 }
 #slide-03 #two-four-percent-one {
+  display: none;
   position: absolute;
   top: 89.8%;
   left: 61.8%;
 }
 #slide-03 #two-four-2-percent {
+  display: none;
   position: absolute;
   top: 76.5%;
   left: 62%;
 }
 #slide-03 #two-four-2-percent-one {
+  display: none;
   position: absolute;
   top: 77.5%;
   left: 68%;
 }
 #slide-03 #two-four-2-percent-two {
+  display: none;
   position: absolute;
   top: 80.1%;
   left: 68%;
 }
 #slide-03 #one-two-percent {
+  display: none;
   position: absolute;
   top: 64.7%;
   left: 64.3%;
 }
 #slide-03 #one-two-percent-one {
+  display: none;
   position: absolute;
   top: 65.9%;
   left: 70%;
 }
 #slide-03 #one-two-percent-two {
+  display: none;
   position: absolute;
   top: 68.1%;
   left: 70%;
 }
 #slide-03 #one-percent {
+  display: none;
   position: absolute;
   top: 51%;
   left: 62%;
 }
 #slide-03 #one-percent-one {
+  display: none;
   position: absolute;
   top: 52%;
   left: 68%;
 }
 #slide-03 #one-percent-two {
+  display: none;
   position: absolute;
   top: 54.5%;
   left: 68%;
