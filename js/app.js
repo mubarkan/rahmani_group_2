@@ -69,22 +69,33 @@ function adjustSlide03Text() {
   var width1a = height*0.58;
   var width1b = width1a.toString() + "px";
   var width2a = width1a*0.60;
-  var width2b = width2a.toString() + "px"
+  var width2b = width2a.toString() + "px";
   var width3a = width1a*0.195;
-  var width3b = width3a.toString() + "px"
+  var width3b = width3a.toString() + "px";
   var width4a = width1a*0.145;
-  var width4b = width4a.toString() + "px"
+  var width4b = width4a.toString() + "px";
   var width5a = width1a*0.30;
-  var width5b = width5a.toString() + "px"
+  var width5b = width5a.toString() + "px";
+  var width6a = width1a*0.38;
+  var width6b = width6a.toString() + "px";
+  var width7a = width1a*0.32;
+  var width7b = width7a.toString() + "px";
   var left1 = ((((width - width1a)/2)/width)*100).toString() + "%";
   var left2 = (((((width/2) - width2a) - width1a*0.32)/width)*100).toString() + "%";
   var left3 = (((((width/2) - width3a) - width1a*0.07)/width)*100).toString() + "%";
   var left4 = (((((width/2) - width4a) + width1a*0.278)/width)*100).toString() + "%";
   var left5 = (((((width/2) - width5a) + width1a*0.469)/width)*100).toString() + "%";
+  var left6 = (((((width/2) - width6a) + width1a*0.574)/width)*100).toString() + "%";
+  var left7 = (((((width/2) - width7a) + width1a*0.524)/width)*100).toString() + "%";
+  var left8 = ((((width - (width1a*0.5))/2)/width)*100).toString() + "%";
   var lineHeight1 = (48*height/700).toString() + "px";
   console.log("inside adjustSlide03Text");
-  $('#slide-03 p').css({
-    'font-size': (32*width/1680),
+  $('#slide-03 .group-structure-heading').css({
+    'width': (width1a*0.5),
+    'left': left8
+  });
+  $('#slide-03 .group-structure-heading p').css({
+    'font-size': (width1a*0.08),
     'line-height': lineHeight1
   });
   $('#slide-03 img[src="images/group_structure_wheel(1).png"]').css({
@@ -106,6 +117,29 @@ function adjustSlide03Text() {
   $('#slide-03 img[src="images/line_04.png"]').css({
     'width': width5b,
     'left': left5
+  });
+  $('#slide-03 img[src="images/line_05.png"]').css({
+    'width': width6b,
+    'left': left6
+  });
+  $('#slide-03 img[src="images/line_06.png"]').css({
+    'width': width7b,
+    'left': left7
+  });
+  $('#slide-03 #seventy-six-percent').css({
+    'top': (height*0.086 + width1a),
+    'font-size': width1a*0.108,
+    'left': (width/2) - width1a*1.05
+  });
+  $('#slide-03 #seventy-six-percent-one').css({
+    'top': (height*0.099 + width1a),
+    'font-size': width1a*0.045,
+    'left': (width/2) - width1a*0.81
+  });
+  $('#slide-03 #seventy-six-percent-two').css({
+    'top': (height*0.125 + width1a),
+    'font-size': width1a*0.045,
+    'left': (width/2) - width1a*0.81
   });
 }
 function adjustSlide04Text() {
