@@ -211,7 +211,6 @@ function adjustSlide03Text() {
     'font-size': width1a*0.045,
     'left': (width/2) + width1a*0.75
   });
-
 }
 function adjustSlide04Text() {
   var width = $(window).width();
@@ -246,7 +245,6 @@ function adjustSlide04Text() {
   });
 }
 function nextSlide() {
-
   var currentSlideId = $('.active').attr('id');
   var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
   if (currentSlideNumber === 5) {
@@ -260,8 +258,9 @@ function nextSlide() {
     adjustSlide02Text();
     emptySlideOne();
   } else if (currentSlideNumber === 2 && nextSlideNumber === 3) {
-    adjustSlide03Text();
     emptySlideTwo();
+    adjustSlide03Text();
+    populateSlideThree();
   } else if (currentSlideNumber === 3 && nextSlideNumber === 4) {
     adjustSlide04Text();
   } else if (currentSlideNumber === 4 && nextSlideNumber === 5) {
@@ -282,10 +281,8 @@ function nextSlide() {
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
     populateSlideOne();
   }
-
 }
 function previousSlide() {
-  adjustSlide02Text();
   var currentSlideId = $('.active').attr('id');
   var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
   if (currentSlideNumber === 1) {
@@ -295,12 +292,16 @@ function previousSlide() {
   }
   var nextSlideId = "slide-0" + nextSlideNumber.toString();
 
-  if (currentSlideNumber === 1 && nextSlideNumber === 4) {
-    adjustSlide04Text();
+  if (currentSlideNumber === 1 && nextSlideNumber === 5) {
     emptySlideOne();
   } else if (currentSlideNumber === 2 && nextSlideNumber === 1) {
     emptySlideTwo();
   } else if (currentSlideNumber === 3 && nextSlideNumber === 2) {
+    adjustSlide02Text();
+  } else if (currentSlideNumber === 4 && nextSlideNumber === 3) {
+    adjustSlide03Text();
+  } else if (currentSlideNumber === 5 && nextSlideNumber === 4) {
+    adjustSlide04Text();
   }
 
   setTimeout(function() {
@@ -320,7 +321,6 @@ function previousSlide() {
   } else if (currentSlideNumber === 3 && nextSlideNumber === 2) {
     populateSlideTwo();
   }
-
 }
 function populateSlideOne() {
   $('#slide-01 img').css({
@@ -375,6 +375,42 @@ function emptySlideTwo() {
   $('#slide-02 #fact-6').fadeOut();
   $('#slide-02 #fact-7').fadeOut();
   $('#slide-02 button').fadeOut();
+}
+function populateSlideThree() {
+  var width = $(window).width();
+  var height = $(window).height();
+  var width1 = height*0.58;
+  var left = ((((width - (width1*0.5))/2)/width)*100).toString() + "%";
+  $('#slide-03 .group-structure-heading').animate({
+    'top': '33%',
+    'width': (width1*0.5),
+    'left': left,
+    'opacity': 'show'
+  }, 1500);
+  setTimeout(function() {
+    $('#slide-03 img[src="images/group_structure_wheel(1).png"]').fadeIn(1000);
+  }, 1000);
+  setTimeout(function() {
+    $('#slide-03 img[src="images/line_01.png"]').fadeIn(1000);
+  }, 1200);
+  setTimeout(function() {
+    $('#slide-03 #seventy-six-percent').fadeIn(1000);
+  }, 1400);
+  setTimeout(function() {
+    $('#slide-03 #seventy-six-percent-one').fadeIn(1000);
+    $('#slide-03 #seventy-six-percent-two').fadeIn(1000);
+  }, 1600);
+  setTimeout(function() {
+    $('#slide-03 img[src="images/line_02.png"]').fadeIn(1000);
+  }, 1800);
+  setTimeout(function() {
+    $('#slide-03 #seventeen-percent').fadeIn(1000);
+  }, 2000);
+  setTimeout(function() {
+    $('#slide-03 #seventeen-percent-one').fadeIn(1000);
+    $('#slide-03 #seventeen-percent-two').fadeIn(1000);
+  }, 2200);
+
 }
 
 
