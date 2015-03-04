@@ -156,6 +156,16 @@ function adjustSlide03Text() {
     'font-size': width1a*0.045,
     'left': (width/2) - width1a*0.28
   });
+  $('#slide-03 #two-four-percent').css({
+    'top': (height*0.29 + width1a),
+    'font-size': width1a*0.108,
+    'left': (width/2) + width1a*0.232
+  });
+  $('#slide-03 #two-four-percent-one').css({
+    'top': (height*0.315 + width1a),
+    'font-size': width1a*0.045,
+    'left': (width/2) + width1a*0.5
+  });
 }
 function adjustSlide04Text() {
   var width = $(window).width();
