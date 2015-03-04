@@ -166,6 +166,22 @@ function adjustSlide03Text() {
     'font-size': width1a*0.045,
     'left': (width/2) + width1a*0.5
   });
+  $('#slide-03 #two-four-2-percent').css({
+    'top': (height*0.18 + width1a),
+    'font-size': width1a*0.108,
+    'left': (width/2) + width1a*0.48
+  });
+  $('#slide-03 #two-four-2-percent-one').css({
+    'top': (height*0.193 + width1a),
+    'font-size': width1a*0.045,
+    'left': (width/2) + width1a*0.75
+  });
+  $('#slide-03 #two-four-2-percent-two').css({
+    'top': (height*0.22 + width1a),
+    'font-size': width1a*0.045,
+    'left': (width/2) + width1a*0.75
+  });
+
 }
 function adjustSlide04Text() {
   var width = $(window).width();
