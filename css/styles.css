@@ -232,14 +232,26 @@ a.navbar-brand {
 #slide-02 #fact-2 {
   display: none;
   border: 1px solid #C7A865;
-  background-image: url('../images/1000-plus.jpg');
-  background-size: 85%;
-  background-position: center;
+  background-color: #C7A865;
+  color: black;
   position: absolute;
   top: 25%;
   left:60%;
   width: 13%;
   height: 15%;
+}
+#slide-02 #fact-2 p:nth-of-type(1) {
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 0;
+}
+#slide-02 #fact-2 p:nth-of-type(2) {
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0;
+}
+.plus {
+  font-weight: 400;
 }
 #slide-02 #fact-3 {
   display: none;
@@ -287,6 +299,7 @@ a.navbar-brand {
   font-weight: 400;
   font-size: 25px;
   margin-bottom: 5px;
+  padding: 0;
   line-height: 26px;
 }
 #slide-02 #fact-6 {

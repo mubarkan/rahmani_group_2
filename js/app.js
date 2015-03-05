@@ -25,7 +25,10 @@ function adjustSlide02Text() {
   var height = $('.slides-body').height();
   var lineHeight1 = (30*height/700).toString() + "px";
   var lineHeight2 = (28*height/700).toString() + "px";
-  var lineHeight3 = (26*height/700).toString() + "px";
+  var lineHeight3 = (22*height/700).toString() + "px";
+  var lineHeight4 = (20*height/700).toString() + "px";
+  var margin1 = (20*height/700).toString() + "px";
+  var margin2 = (10*height/700).toString() + "px";
   console.log("inside adjustSlide02Text");
   console.log(height);
   $('.slide-caption').css({
@@ -37,6 +40,18 @@ function adjustSlide02Text() {
   });
   $('#fact-1').css({
     'padding': (15*width/1680)
+  });
+  $('#fact-2 p:nth-of-type(1)').css({
+    'line-height': lineHeight2,
+    'margin-top': margin1,
+    'margin-bottom': margin2,
+    'font-size': (45*width/1680)
+  });
+  $('#fact-2 p:nth-of-type(2)').css({
+    'line-height': lineHeight2,
+    'margin-top': margin2,
+    'margin-bottom': margin1,
+    'font-size': (35*width/1680)
   });
   $('#fact-3 p').css({
     'font-size': (26*width/1680),
