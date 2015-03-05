@@ -264,6 +264,8 @@ function nextSlide() {
     emptySlideThree();
     adjustSlide04Text();
   } else if (currentSlideNumber === 4 && nextSlideNumber === 5) {
+    emptySlideFour();
+  } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
   }
 
   setTimeout(function() {
@@ -288,6 +290,7 @@ function nextSlide() {
     setTimeout(function() {
       populateSlideFour();
     }, 300);  //precaution to make sure adjust function got chance to finish executing
+  } else if (currentSlideNumber === 4 && nextSlideNumber === 5) {
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
     populateSlideOne();
   }
@@ -310,6 +313,7 @@ function previousSlide() {
     emptySlideThree();
     adjustSlide02Text();
   } else if (currentSlideNumber === 4 && nextSlideNumber === 3) {
+    emptySlideFour();
     adjustSlide03Text();
   } else if (currentSlideNumber === 5 && nextSlideNumber === 4) {
     adjustSlide04Text();
@@ -335,6 +339,10 @@ function previousSlide() {
     setTimeout(function() {
       populateSlideThree();
     }, 300);  //it appears adjustSlide03Text funtion needs 200ms to finish, hence this delay is needed for populateSlideThree function to work properly
+  } else if (currentSlideNumber === 5 && nextSlideNumber === 4) {
+    setTimeout(function() {
+      populateSlideFour();
+    }, 300);  //precation
   }
 }
 function populateSlideOne() {
@@ -497,25 +505,39 @@ function populateSlideFour() {
   setTimeout(function() {
     $('#slide-04 #year-2013-trans').fadeIn(1000);
     $('#slide-04 #tfp-1').fadeIn(1000);
-  }, 1600);
+  }, 1400);
   setTimeout(function() {
     $('#slide-04 #year-2013-fuel').fadeIn(1000);
     $('#slide-04 #tfp-2').fadeIn(1000);
-  }, 1800);
+  }, 1600);
   setTimeout(function() {
     $('#slide-04 #year-2014-trans').fadeIn(1000);
     $('#slide-04 #tfp-3').fadeIn(1000);
-  }, 2000);
+  }, 1800);
   setTimeout(function() {
     $('#slide-04 #year-2014-fuel').fadeIn(1000);
     $('#slide-04 #tfp-4').fadeIn(1000);
-  }, 2200);
+  }, 2000);
   setTimeout(function() {
     $('#slide-04 #year-2013').fadeIn(1000);
     $('#slide-04 #year-2014').fadeIn(1000);
-  }, 2400);
+  }, 2200);
 }
 function emptySlideFour() {
+  $('#slide-04 .slide-caption').fadeOut(1000);
+  setTimeout(function() {
+    $('#slide-04 .slide-caption').css({'top': '1%'});
+  }, 1100);
+  $('#slide-04 #year-2013-trans').fadeOut(1000);
+  $('#slide-04 #tfp-1').fadeOut(1000);
+  $('#slide-04 #year-2013-fuel').fadeOut(1000);
+  $('#slide-04 #tfp-2').fadeOut(1000);
+  $('#slide-04 #year-2014-trans').fadeOut(1000);
+  $('#slide-04 #tfp-3').fadeOut(1000);
+  $('#slide-04 #year-2014-fuel').fadeOut(1000);
+  $('#slide-04 #tfp-4').fadeOut(1000);
+  $('#slide-04 #year-2013').fadeOut(1000);
+  $('#slide-04 #year-2014').fadeOut(1000);
 }
 
 jQuery(document).ready(function() {
