@@ -260,9 +260,6 @@ function nextSlide() {
   } else if (currentSlideNumber === 2 && nextSlideNumber === 3) {
     emptySlideTwo();
     adjustSlide03Text();
-    setTimeout(function() {
-      populateSlideThree();
-    }, 200);  //it appears adjustSlide03Text funtion needs 200ms to finish, hence this delay is needed for populateSlideThree function to work properly
   } else if (currentSlideNumber === 3 && nextSlideNumber === 4) {
     emptySlideThree();
     adjustSlide04Text();
@@ -280,7 +277,13 @@ function nextSlide() {
   }, 800);
 
   if (currentSlideNumber === 1 && nextSlideNumber === 2) {
-    populateSlideTwo();
+    setTimeout(function() {
+      populateSlideTwo();
+    }, 300);  //it appears adjustSlide03Text funtion needs 200ms to finish, hence this delay is needed for populateSlideThree function to work properly
+  } else if (currentSlideNumber === 2 && nextSlideNumber === 3) {
+    setTimeout(function() {
+      populateSlideThree();
+    }, 300);  //it appears adjustSlide03Text funtion needs 200ms to finish, hence this delay is needed for populateSlideThree function to work properly
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
     populateSlideOne();
   }
@@ -304,9 +307,6 @@ function previousSlide() {
     adjustSlide02Text();
   } else if (currentSlideNumber === 4 && nextSlideNumber === 3) {
     adjustSlide03Text();
-    setTimeout(function() {
-      populateSlideThree();
-    }, 200);  //it appears adjustSlide03Text funtion needs 200ms to finish, hence this delay is needed for populateSlideThree function to work properly
   } else if (currentSlideNumber === 5 && nextSlideNumber === 4) {
     adjustSlide04Text();
   }
@@ -327,6 +327,10 @@ function previousSlide() {
     populateSlideOne();
   } else if (currentSlideNumber === 3 && nextSlideNumber === 2) {
     populateSlideTwo();
+  } else if (currentSlideNumber === 4 && nextSlideNumber === 3) {
+    setTimeout(function() {
+      populateSlideThree();
+    }, 300);  //it appears adjustSlide03Text funtion needs 200ms to finish, hence this delay is needed for populateSlideThree function to work properly
   }
 }
 function populateSlideOne() {
