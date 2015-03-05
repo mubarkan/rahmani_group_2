@@ -22,9 +22,13 @@ a.navbar-brand {
 }
 .navbar-brand p {
   font-family: 'Michroma', sans-serif;
+  color: grey;
   font-size: 16px;
   margin-top: 13px;
   margin-left: 90px;
+}
+.navbar-brand p:hover {
+  color: grey;
 }
 
 /* Changing navbar color scheme START */
@@ -766,6 +770,9 @@ a.navbar-brand {
   color: #C7A865;
   text-decoration: none;
   font-size: 0.9em;
+}
+.footer li a:hover {
+  color: #EBD9B3;
 }
 .footer h5 {
   display: block;
