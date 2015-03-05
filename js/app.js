@@ -1,24 +1,46 @@
 function adjustSlidesHeight() {
   var height = $(window).height();
+  var width = $(window).width();
   console.log(height);
-  $('.slides-body').css({
-    'height': height-265
-  });
-  $('#slide-01').css({
-    'height': height-265
-  });
-  $('#slide-02').css({
-    'height': height-265
-  });
-  $('#slide-03').css({
-    'height': height-265
-  });
-  $('#slide-04').css({
-    'height': height-265
-  });
-  $('#slide-05').css({
-    'height': height-265
-  });
+  if (width <= 767) {
+     $('.slides-body').css({
+      'height': height-80
+    });
+    $('#slide-01').css({
+      'height': height-80
+    });
+    $('#slide-02').css({
+      'height': height-80
+    });
+    $('#slide-03').css({
+      'height': height-80
+    });
+    $('#slide-04').css({
+      'height': height-80
+    });
+    $('#slide-05').css({
+      'height': height-80
+    });
+  } else {
+    $('.slides-body').css({
+      'height': height-265
+    });
+    $('#slide-01').css({
+      'height': height-265
+    });
+    $('#slide-02').css({
+      'height': height-265
+    });
+    $('#slide-03').css({
+      'height': height-265
+    });
+    $('#slide-04').css({
+      'height': height-265
+    });
+    $('#slide-05').css({
+      'height': height-265
+    });
+  }
 }
 function adjustSlide02Text() {
   var width = $(window).width();
