@@ -255,13 +255,16 @@ function nextSlide() {
   var nextSlideId = "slide-0" + nextSlideNumber.toString();
 
   if (currentSlideNumber === 1 && nextSlideNumber === 2) {
-    adjustSlide02Text();
     emptySlideOne();
+    adjustSlide02Text();
   } else if (currentSlideNumber === 2 && nextSlideNumber === 3) {
     emptySlideTwo();
     adjustSlide03Text();
-    populateSlideThree();
+    setTimeout(function() {
+      populateSlideThree();
+    }, 200);  //it appears adjustSlide03Text funtion needs 200ms to finish, hence this delay is needed for populateSlideThree function to work properly
   } else if (currentSlideNumber === 3 && nextSlideNumber === 4) {
+    emptySlideThree();
     adjustSlide04Text();
   } else if (currentSlideNumber === 4 && nextSlideNumber === 5) {
   }
@@ -297,9 +300,13 @@ function previousSlide() {
   } else if (currentSlideNumber === 2 && nextSlideNumber === 1) {
     emptySlideTwo();
   } else if (currentSlideNumber === 3 && nextSlideNumber === 2) {
+    emptySlideThree();
     adjustSlide02Text();
   } else if (currentSlideNumber === 4 && nextSlideNumber === 3) {
     adjustSlide03Text();
+    setTimeout(function() {
+      populateSlideThree();
+    }, 200);  //it appears adjustSlide03Text funtion needs 200ms to finish, hence this delay is needed for populateSlideThree function to work properly
   } else if (currentSlideNumber === 5 && nextSlideNumber === 4) {
     adjustSlide04Text();
   }
@@ -392,65 +399,94 @@ function populateSlideThree() {
   }, 1000);
   setTimeout(function() {
     $('#slide-03 img[src="images/line_01.png"]').slideDown(1000);
-  }, 1100);
+  }, 1200);
   setTimeout(function() {
     $('#slide-03 #seventy-six-percent').fadeIn(1000);
-  }, 1200);
+  }, 1300);
   setTimeout(function() {
     $('#slide-03 #seventy-six-percent-one').fadeIn(1000);
     $('#slide-03 #seventy-six-percent-two').fadeIn(1000);
-  }, 1300);
-  setTimeout(function() {
-    $('#slide-03 img[src="images/line_02.png"]').slideDown(1000);
   }, 1400);
   setTimeout(function() {
-    $('#slide-03 #seventeen-percent').fadeIn(1000);
+    $('#slide-03 img[src="images/line_02.png"]').slideDown(1000);
   }, 1500);
+  setTimeout(function() {
+    $('#slide-03 #seventeen-percent').fadeIn(1000);
+  }, 1600);
   setTimeout(function() {
     $('#slide-03 #seventeen-percent-one').fadeIn(1000);
     $('#slide-03 #seventeen-percent-two').fadeIn(1000);
-  }, 1600);
-  setTimeout(function() {
-    $('#slide-03 img[src="images/line_03.png"]').slideDown(1000);
   }, 1700);
   setTimeout(function() {
-    $('#slide-03 #two-four-percent').fadeIn(1000);
+    $('#slide-03 img[src="images/line_03.png"]').slideDown(1000);
   }, 1800);
   setTimeout(function() {
-    $('#slide-03 #two-four-percent-one').fadeIn(1000);
+    $('#slide-03 #two-four-percent').fadeIn(1000);
   }, 1900);
   setTimeout(function() {
-    $('#slide-03 img[src="images/line_04.png"]').slideDown(1000);
+    $('#slide-03 #two-four-percent-one').fadeIn(1000);
   }, 2000);
   setTimeout(function() {
-    $('#slide-03 #two-four-2-percent').fadeIn(1000);
+    $('#slide-03 img[src="images/line_04.png"]').slideDown(1000);
   }, 2100);
+  setTimeout(function() {
+    $('#slide-03 #two-four-2-percent').fadeIn(1000);
+  }, 2200);
   setTimeout(function() {
     $('#slide-03 #two-four-2-percent-one').fadeIn(1000);
     $('#slide-03 #two-four-2-percent-two').fadeIn(1000);
-  }, 2200);
-  setTimeout(function() {
-    $('#slide-03 img[src="images/line_05.png"]').slideDown(1000);
   }, 2300);
   setTimeout(function() {
-    $('#slide-03 #one-two-percent').fadeIn(1000);
+    $('#slide-03 img[src="images/line_05.png"]').slideDown(1000);
   }, 2400);
+  setTimeout(function() {
+    $('#slide-03 #one-two-percent').fadeIn(1000);
+  }, 2500);
   setTimeout(function() {
     $('#slide-03 #one-two-percent-one').fadeIn(1000);
     $('#slide-03 #one-two-percent-two').fadeIn(1000);
-  }, 2500);
-  setTimeout(function() {
-    $('#slide-03 img[src="images/line_06.png"]').slideDown(1000);
   }, 2600);
   setTimeout(function() {
-    $('#slide-03 #one-percent').fadeIn(1000);
+    $('#slide-03 img[src="images/line_06.png"]').slideDown(1000);
   }, 2700);
+  setTimeout(function() {
+    $('#slide-03 #one-percent').fadeIn(1000);
+  }, 2800);
   setTimeout(function() {
     $('#slide-03 #one-percent-one').fadeIn(1000);
     $('#slide-03 #one-percent-two').fadeIn(1000);
-  }, 2800);
+  }, 2900);
 }
-
+function emptySlideThree() {
+  $('#slide-03 .group-structure-heading').fadeOut(1000);
+  setTimeout(function() {
+    $('#slide-03 .group-structure-heading').css({'top': '10%'});
+  }, 1100);
+  $('#slide-03 img[src="images/group_structure_wheel(1).png"]').fadeOut(1000);
+  $('#slide-03 img[src="images/line_01.png"]').fadeOut(1000);
+  $('#slide-03 #seventy-six-percent').fadeOut(1000);
+  $('#slide-03 #seventy-six-percent-one').fadeOut(1000);
+  $('#slide-03 #seventy-six-percent-two').fadeOut(1000);
+  $('#slide-03 img[src="images/line_02.png"]').fadeOut(1000);
+  $('#slide-03 #seventeen-percent').fadeOut(1000);
+  $('#slide-03 #seventeen-percent-one').fadeOut(1000);
+  $('#slide-03 #seventeen-percent-two').fadeOut(1000);
+  $('#slide-03 img[src="images/line_03.png"]').fadeOut(1000);
+  $('#slide-03 #two-four-percent').fadeOut(1000);
+  $('#slide-03 #two-four-percent-one').fadeOut(1000);
+  $('#slide-03 img[src="images/line_04.png"]').fadeOut(1000);
+  $('#slide-03 #two-four-2-percent').fadeOut(1000);
+  $('#slide-03 #two-four-2-percent-one').fadeOut(1000);
+  $('#slide-03 #two-four-2-percent-two').fadeOut(1000);
+  $('#slide-03 img[src="images/line_05.png"]').fadeOut(1000);
+  $('#slide-03 #one-two-percent').fadeOut(1000);
+  $('#slide-03 #one-two-percent-one').fadeOut(1000);
+  $('#slide-03 #one-two-percent-two').fadeOut(1000);
+  $('#slide-03 img[src="images/line_06.png"]').fadeOut(1000);
+  $('#slide-03 #one-percent').fadeOut(1000);
+  $('#slide-03 #one-percent-one').fadeOut(1000);
+  $('#slide-03 #one-percent-two').fadeOut(1000);
+}
 
 jQuery(document).ready(function() {
 
