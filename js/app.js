@@ -27,6 +27,8 @@ function adjustSlide02Text() {
   var lineHeight2 = (28*height/700).toString() + "px";
   var lineHeight3 = (22*height/700).toString() + "px";
   var lineHeight4 = (20*height/700).toString() + "px";
+  var lineHeight5 = (24*height/700).toString() + "px";
+  var lineHeight6 = (55*height/700).toString() + "px";
   var margin1 = (20*height/700).toString() + "px";
   var margin2 = (10*height/700).toString() + "px";
   console.log("inside adjustSlide02Text");
@@ -56,6 +58,14 @@ function adjustSlide02Text() {
   $('#fact-3 p').css({
     'font-size': (26*width/1680),
     'line-height': lineHeight1
+  });
+  $('#fact-4 p:nth-of-type(1)').css({
+    'line-height': lineHeight5,
+    'font-size': (25*width/1680)
+  });
+  $('#fact-4 p:nth-of-type(2)').css({
+    'line-height': lineHeight6,
+    'font-size': (60*width/1680)
   });
   $('#fact-5 p').css({
     'font-size': (25*width/1680),
