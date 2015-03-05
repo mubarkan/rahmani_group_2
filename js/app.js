@@ -284,6 +284,10 @@ function nextSlide() {
     setTimeout(function() {
       populateSlideThree();
     }, 300);  //it appears adjustSlide03Text funtion needs 200ms to finish, hence this delay is needed for populateSlideThree function to work properly
+  } else if (currentSlideNumber === 3 && nextSlideNumber === 4) {
+    setTimeout(function() {
+      populateSlideFour();
+    }, 300);  //precaution to make sure adjust function got chance to finish executing
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
     populateSlideOne();
   }
@@ -388,14 +392,8 @@ function emptySlideTwo() {
   $('#slide-02 button').fadeOut();
 }
 function populateSlideThree() {
-  var width = $(window).width();
-  var height = $(window).height();
-  var width1 = height*0.58;
-  var left = ((((width - (width1*0.5))/2)/width)*100).toString() + "%";
   $('#slide-03 .group-structure-heading').animate({
     'top': '33%',
-    'width': (width1*0.5),
-    'left': left,
     'opacity': 'show'
   }, 1500);
   setTimeout(function() {
@@ -490,6 +488,34 @@ function emptySlideThree() {
   $('#slide-03 #one-percent').fadeOut(1000);
   $('#slide-03 #one-percent-one').fadeOut(1000);
   $('#slide-03 #one-percent-two').fadeOut(1000);
+}
+function populateSlideFour() {
+  $('#slide-04 .slide-caption').animate({
+    'top': '10%',
+    'opacity': 'show'
+  }, 1500);
+  setTimeout(function() {
+    $('#slide-04 #year-2013-trans').fadeIn(1000);
+    $('#slide-04 #tfp-1').fadeIn(1000);
+  }, 1600);
+  setTimeout(function() {
+    $('#slide-04 #year-2013-fuel').fadeIn(1000);
+    $('#slide-04 #tfp-2').fadeIn(1000);
+  }, 1800);
+  setTimeout(function() {
+    $('#slide-04 #year-2014-trans').fadeIn(1000);
+    $('#slide-04 #tfp-3').fadeIn(1000);
+  }, 2000);
+  setTimeout(function() {
+    $('#slide-04 #year-2014-fuel').fadeIn(1000);
+    $('#slide-04 #tfp-4').fadeIn(1000);
+  }, 2200);
+  setTimeout(function() {
+    $('#slide-04 #year-2013').fadeIn(1000);
+    $('#slide-04 #year-2014').fadeIn(1000);
+  }, 2400);
+}
+function emptySlideFour() {
 }
 
 jQuery(document).ready(function() {
