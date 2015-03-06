@@ -758,6 +758,20 @@ a.navbar-brand {
   background-size: cover;
   position: relative;
 }
+#slide-05 .rahmani-group-projects {
+  /*display: none;*/
+  /*border: 1px solid red;*/
+  position: absolute;
+  top: 43.7%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 40px;
+}
+#slide-05 .rahmani-group-projects p:first-of-type {
+  color: #C7A865;
+}
 #slide-05 img[src="images/slide-05-transparent-wheel.png"] {
   display: none;
   position: absolute;

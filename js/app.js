@@ -312,10 +312,21 @@ function adjustSlide05Text() {
   var height = $('.slides-body').height();
   var width1a = height*0.72;
   var width1b = width1a.toString() + "px";
+  var width2a = height*0.5;
+  var width2b = width1a.toString() + "px";
   var left1 = ((((width - width1a)/2)/width)*100).toString() + "%";
+  var left2 = ((((width - width1a*0.5)/2)/width)*100).toString() + "%";
   var lineHeight1 = (30*height/700).toString() + "px";
   var margin1 = (20*height/700).toString() + "px";
   console.log("inside adjustSlide05Text");
+  $('#slide-05 .rahmani-group-projects').css({
+    'width': (width1a*0.5),
+    'left': left2
+  });
+  $('#slide-05 .rahmani-group-projects p').css({
+    'font-size': (width1a*0.06),
+    'line-height': lineHeight1
+  });
   $('#slide-05 img[src="images/slide-05-transparent-wheel.png"]').css({
     'width': width1b,
     'left': left1
@@ -668,7 +679,7 @@ function emptySlideFour() {
   $('#slide-04 #year-2014').fadeOut(1000);
 }
 function populateSlideFive() {
-  // $('#slide-05 .slide-caption').animate({
+  // $('#slide-05 .rahmani-group-projects').animate({
   //   'top': '10%',
   //   'opacity': 'show'
   // }, 1500);
