@@ -44,7 +44,9 @@ ul {
 
 p, li {
   color: #878787;
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-align: justify;
 }
-
+img[src="images/RG-corporate-structure.png"] {
+  width: 100%;
+}
