@@ -348,6 +348,22 @@ function adjustSlide05Text() {
     'width': width1b,
     'left': left1
   });
+  $('#slide-05 img[src="images/slide-05-rim-consumer.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-rim-government.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-consumer-text.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-government-text.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
 }
 function nextSlide() {
   var currentSlideId = $('.active').attr('id');
@@ -397,6 +413,9 @@ function nextSlide() {
       populateSlideFour();
     }, 300);  //precaution to make sure adjust function got chance to finish executing
   } else if (currentSlideNumber === 4 && nextSlideNumber === 5) {
+    setTimeout(function() {
+      populateSlideFive()
+    }, 300);  //precaution to make sure adjust function got chance to finish executing
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
     populateSlideOne();
   }
@@ -436,8 +455,10 @@ function previousSlide() {
 
   }, 800);
 
-  if (currentSlideNumber === 1 && nextSlideNumber === 4) {
-
+  if (currentSlideNumber === 1 && nextSlideNumber === 5) {
+    setTimeout(function() {
+      populateSlideFive();
+    }, 300);
   } else if (currentSlideNumber === 2 && nextSlideNumber === 1) {
     populateSlideOne();
   } else if (currentSlideNumber === 3 && nextSlideNumber === 2) {
@@ -646,6 +667,49 @@ function emptySlideFour() {
   $('#slide-04 #year-2013').fadeOut(1000);
   $('#slide-04 #year-2014').fadeOut(1000);
 }
+function populateSlideFive() {
+  // $('#slide-05 .slide-caption').animate({
+  //   'top': '10%',
+  //   'opacity': 'show'
+  // }, 1500);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-transparent-wheel.png').fadeIn(1000);
+  }, 1400);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-poultry.png').fadeIn(1000);
+  }, 1600);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-cement.png').fadeIn(1000);
+  }, 1800);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-steel.png').fadeIn(1000);
+  }, 2000);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-real-estate.png').fadeIn(1000);
+  }, 2200);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-construction.png').fadeIn(1000);
+  }, 2400);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-afghan.png').fadeIn(1000);
+  }, 2600);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-usg.png').fadeIn(1000);
+  }, 2800);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-rim-consumer.png').fadeIn(2000);
+  }, 1600);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-rim-government.png').fadeIn(1000);
+  }, 2600);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-consumer-text.png').fadeIn(2000);
+  }, 1600);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-government-text.png').fadeIn(1000);
+  }, 2600);
+}
+
 jQuery(document).ready(function() {
 
   adjustSlidesHeight();

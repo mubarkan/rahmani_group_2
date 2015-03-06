@@ -759,42 +759,62 @@ a.navbar-brand {
   position: relative;
 }
 #slide-05 img[src="images/slide-05-transparent-wheel.png"] {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 14%;
 }
 #slide-05 img[src="images/slide-05-poultry.png"] {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 14%;
 }
 #slide-05 img[src="images/slide-05-cement.png"] {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 14%;
 }
 #slide-05 img[src="images/slide-05-steel.png"] {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 14%;
 }
 #slide-05 img[src="images/slide-05-real-estate.png"] {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 14%;
 }
 #slide-05 img[src="images/slide-05-construction.png"] {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 14%;
 }
 #slide-05 img[src="images/slide-05-afghan.png"] {
-  /*display: none;*/
+  display: none;
   position: absolute;
   top: 14%;
 }
 #slide-05 img[src="images/slide-05-usg.png"] {
-  /*display: none;*/
+  display: none;
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-rim-consumer.png"] {
+  display: none;
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-rim-government.png"] {
+  display: none;
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-consumer-text.png"] {
+  display: none;
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-government-text.png"] {
+  display: none;
   position: absolute;
   top: 14%;
 }
