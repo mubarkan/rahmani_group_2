@@ -307,6 +307,20 @@ function adjustSlide04Text() {
     'font-size': (13*width/1680)
   });
 }
+function adjustSlide05Text() {
+  var width = $(window).width();
+  var height = $('.slides-body').height();
+  var width1a = height*0.72;
+  var width1b = width1a.toString() + "px";
+  var left1 = ((((width - width1a)/2)/width)*100).toString() + "%";
+  var lineHeight1 = (30*height/700).toString() + "px";
+  var margin1 = (20*height/700).toString() + "px";
+  console.log("inside adjustSlide05Text");
+  $('#slide-05 img[src="images/contracts-projects(1).png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+}
 function nextSlide() {
   var currentSlideId = $('.active').attr('id');
   var currentSlideNumber = parseInt(currentSlideId.replace("slide-0", ""));
@@ -328,6 +342,7 @@ function nextSlide() {
     adjustSlide04Text();
   } else if (currentSlideNumber === 4 && nextSlideNumber === 5) {
     emptySlideFour();
+    adjustSlide05Text();
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
   }
 
@@ -370,6 +385,7 @@ function previousSlide() {
 
   if (currentSlideNumber === 1 && nextSlideNumber === 5) {
     emptySlideOne();
+    adjustSlide05Text();
   } else if (currentSlideNumber === 2 && nextSlideNumber === 1) {
     emptySlideTwo();
   } else if (currentSlideNumber === 3 && nextSlideNumber === 2) {
@@ -609,6 +625,7 @@ jQuery(document).ready(function() {
   $(window).on('resize', adjustSlide02Text);
   $(window).on('resize', adjustSlide03Text);
   $(window).on('resize', adjustSlide04Text);
+  $(window).on('resize', adjustSlide05Text);
   $('.arrow-up').on('click', nextSlide);
   $('.arrow-down').on('click', previousSlide);
 });

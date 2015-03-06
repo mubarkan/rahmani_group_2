@@ -753,10 +753,15 @@ a.navbar-brand {
 /* Slide 5 START */
 #slide-05 {
   display: none;
-  background-image: url('../images/projects_contracts.png');
+  background-image: url('../images/slide-05-background.jpg');
   background-position: center;
   background-size: cover;
   position: relative;
+}
+#slide-05 img[src="images/contracts-projects(1).png"] {
+  /*display: none;*/
+  position: absolute;
+  top: 14%;
 }
 /* Slide 5 END */
 
