@@ -759,10 +759,10 @@ a.navbar-brand {
   position: relative;
 }
 #slide-05 .rahmani-group-projects {
-  /*display: none;*/
+  display: none;
   /*border: 1px solid red;*/
   position: absolute;
-  top: 43.7%;
+  top: 30%;
   width: 100%;
   text-align: center;
   color: white;

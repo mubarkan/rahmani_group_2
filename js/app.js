@@ -399,6 +399,7 @@ function nextSlide() {
     emptySlideFour();
     adjustSlide05Text();
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
+    emptySlideFive();
   }
 
   setTimeout(function() {
@@ -453,6 +454,7 @@ function previousSlide() {
     emptySlideFour();
     adjustSlide03Text();
   } else if (currentSlideNumber === 5 && nextSlideNumber === 4) {
+    emptySlideFive();
     adjustSlide04Text();
   }
 
@@ -679,10 +681,10 @@ function emptySlideFour() {
   $('#slide-04 #year-2014').fadeOut(1000);
 }
 function populateSlideFive() {
-  // $('#slide-05 .rahmani-group-projects').animate({
-  //   'top': '10%',
-  //   'opacity': 'show'
-  // }, 1500);
+  $('#slide-05 .rahmani-group-projects').animate({
+    'top': '43.7%',
+    'opacity': 'show'
+  }, 1500);
   setTimeout(function() {
     $('#slide-05 img[src="images/slide-05-transparent-wheel.png').fadeIn(1000);
   }, 1400);
@@ -719,6 +721,24 @@ function populateSlideFive() {
   setTimeout(function() {
     $('#slide-05 img[src="images/slide-05-government-text.png').fadeIn(1000);
   }, 2600);
+}
+function emptySlideFive() {
+  $('#slide-05 .rahmani-group-projects').fadeOut(1000);
+  setTimeout(function() {
+    $('#slide-04 .rahmani-group-projects').css({'top': '30%'});
+  }, 1100);
+  $('#slide-05 img[src="images/slide-05-transparent-wheel.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-poultry.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-cement.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-steel.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-real-estate.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-construction.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-afghan.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-usg.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-rim-consumer.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-rim-government.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-consumer-text.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-government-text.png').fadeOut(1000);
 }
 
 jQuery(document).ready(function() {
