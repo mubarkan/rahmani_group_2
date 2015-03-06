@@ -400,6 +400,7 @@ function nextSlide() {
     adjustSlide05Text();
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
     emptySlideFive();
+    // no need to adjust slide one
   }
 
   setTimeout(function() {
@@ -429,7 +430,7 @@ function nextSlide() {
       populateSlideFive()
     }, 300);  //precaution to make sure adjust function got chance to finish executing
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
-    populateSlideOne();
+    populateSlideOne(); //no need to delay population of slide one
   }
 }
 function previousSlide() {
@@ -447,6 +448,7 @@ function previousSlide() {
     adjustSlide05Text();
   } else if (currentSlideNumber === 2 && nextSlideNumber === 1) {
     emptySlideTwo();
+    // no need to adjust slide one text nor layout
   } else if (currentSlideNumber === 3 && nextSlideNumber === 2) {
     emptySlideThree();
     adjustSlide02Text();
@@ -741,7 +743,7 @@ function emptySlideFive() {
   $('#slide-05 img[src="images/slide-05-government-text.png').fadeOut(1000);
 }
 
-jQuery(document).ready(function() {
+$(document).ready(function() {
 
   adjustSlidesHeight();
   $(window).on('resize', adjustSlidesHeight);
