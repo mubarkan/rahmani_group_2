@@ -758,7 +758,42 @@ a.navbar-brand {
   background-size: cover;
   position: relative;
 }
-#slide-05 img[src="images/contracts-projects(1).png"] {
+#slide-05 img[src="images/slide-05-transparent-wheel.png"] {
+  /*display: none;*/
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-poultry.png"] {
+  /*display: none;*/
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-cement.png"] {
+  /*display: none;*/
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-steel.png"] {
+  /*display: none;*/
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-real-estate.png"] {
+  /*display: none;*/
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-construction.png"] {
+  /*display: none;*/
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-afghan.png"] {
+  /*display: none;*/
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-usg.png"] {
   /*display: none;*/
   position: absolute;
   top: 14%;

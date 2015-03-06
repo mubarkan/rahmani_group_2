@@ -316,7 +316,35 @@ function adjustSlide05Text() {
   var lineHeight1 = (30*height/700).toString() + "px";
   var margin1 = (20*height/700).toString() + "px";
   console.log("inside adjustSlide05Text");
-  $('#slide-05 img[src="images/contracts-projects(1).png"]').css({
+  $('#slide-05 img[src="images/slide-05-transparent-wheel.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-poultry.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-cement.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-steel.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-real-estate.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-construction.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-afghan.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-usg.png"]').css({
     'width': width1b,
     'left': left1
   });
