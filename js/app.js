@@ -602,7 +602,6 @@ function emptySlideFour() {
   $('#slide-04 #year-2013').fadeOut(1000);
   $('#slide-04 #year-2014').fadeOut(1000);
 }
-
 jQuery(document).ready(function() {
 
   adjustSlidesHeight();

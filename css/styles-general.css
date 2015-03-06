@@ -4,6 +4,21 @@ body {
   background-color: #EDF2F3;
   color: #8B6B26;
 }
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: white;  /* original #333 */
+    background-color: rgba(164,164,164,0.9);  /* original #D5D5D5, background-color: white */
+}
+/* dropdown START */
+.navbar-default .navbar-nav .open .dropdown-menu {
+  background-color: rgba(164,164,164,0.9);
+  padding: 15px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+  color: #8B6B26;
+  background: inherit;
+}
 .offset:before {
   display: block;
   content: " ";
@@ -42,7 +57,7 @@ ul {
 }
 /* color ul squares END */
 
-p, li {
+.main-body p, .main-body li {
   color: #878787;
   font-size: 1.3em;
   text-align: justify;
