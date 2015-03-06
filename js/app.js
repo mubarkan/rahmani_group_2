@@ -725,7 +725,7 @@ function populateSlideFive() {
 function emptySlideFive() {
   $('#slide-05 .rahmani-group-projects').fadeOut(1000);
   setTimeout(function() {
-    $('#slide-04 .rahmani-group-projects').css({'top': '30%'});
+    $('#slide-05 .rahmani-group-projects').css({'top': '30%'});
   }, 1100);
   $('#slide-05 img[src="images/slide-05-transparent-wheel.png').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-poultry.png').fadeOut(1000);
