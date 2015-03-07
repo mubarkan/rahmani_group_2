@@ -331,7 +331,15 @@ function adjustSlide05Text() {
     'width': width1b,
     'left': left1
   });
+  $('#slide-05 img[src="images/slide-05-poultry-hover.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
   $('#slide-05 img[src="images/slide-05-poultry.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-cement-hover.png"]').css({
     'width': width1b,
     'left': left1
   });
@@ -693,8 +701,14 @@ function populateSlideFive() {
     $('#slide-05 img[src="images/slide-05-transparent-wheel.png"]').fadeIn(1000);
   }, 1400);
   setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-poultry-hover.png"]').fadeIn(1000);
+  }, 1600);
+  setTimeout(function() {
     $('#slide-05 img[src="images/slide-05-poultry.png"]').fadeIn(1000);
   }, 1600);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-cement-hover.png"]').fadeIn(1000);
+  }, 1800);
   setTimeout(function() {
     $('#slide-05 img[src="images/slide-05-cement.png"]').fadeIn(1000);
   }, 1800);
@@ -732,7 +746,9 @@ function emptySlideFive() {
     $('#slide-05 .rahmani-group-projects').css({'top': '30%'});
   }, 1100);
   $('#slide-05 img[src="images/slide-05-transparent-wheel.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-poultry-hover.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-poultry.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-cement-hover.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-cement.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-steel.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-real-estate.png"]').fadeOut(1000);
@@ -744,9 +760,16 @@ function emptySlideFive() {
   $('#slide-05 img[src="images/slide-05-consumer-text.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-government-text.png"]').fadeOut(1000);
 }
+function toggleHotSpotMessage() {
+  var id = "#slide-05 img[src=\"images/slide-05-" + ($(this).attr('id')).replace("-map", "") + ".png\"]";
+  console.log("enter: " + id);
+  $(id).toggle();
+}
 
-$(document).ready(function() {
-
+$(document).ready(function(e) {
+  setTimeout(function() {
+    $('img[usemap]').rwdImageMaps();
+  }, 5000);
   adjustSlidesHeight();
   $(window).on('resize', adjustSlidesHeight);
   $(window).on('resize', adjustSlide02Text);
@@ -755,4 +778,8 @@ $(document).ready(function() {
   $(window).on('resize', adjustSlide05Text);
   $('.arrow-up').on('click', nextSlide);
   $('.arrow-down').on('click', previousSlide);
+  $('.hotspot-area').on('mouseenter mouseleave', toggleHotSpotMessage);
 });
+
+
+

@@ -779,11 +779,22 @@ a.navbar-brand {
   top: 14%;
   left: 50%;
 }
+#slide-05 img[src="images/slide-05-poultry-hover.png"] {
+  display: none;
+  position: absolute;
+  top: 14%;
+  left: 50%;
+}
 #slide-05 img[src="images/slide-05-poultry.png"] {
   display: none;
   position: absolute;
   top: 14%;
   left: 50%;
+}
+#slide-05 img[src="images/slide-05-cement-hover.png"] {
+  display: none;
+  position: absolute;
+  top: 14%;
 }
 #slide-05 img[src="images/slide-05-cement.png"] {
   display: none;
@@ -836,7 +847,7 @@ a.navbar-brand {
   top: 14%;
 }
 #slide-05 img[src="images/map.png"] {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   position: absolute;
   top: 14%;
 }
