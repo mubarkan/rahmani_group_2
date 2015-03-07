@@ -410,7 +410,6 @@ function nextSlide() {
       $('#' + nextSlideId).fadeIn(400);
       $('#' + nextSlideId).addClass('active');
     }, 400);
-
   }, 800);
 
   if (currentSlideNumber === 1 && nextSlideNumber === 2) {
@@ -467,7 +466,6 @@ function previousSlide() {
       $('#' + nextSlideId).fadeIn(400);
       $('#' + nextSlideId).addClass('active');
     }, 400);
-
   }, 800);
 
   if (currentSlideNumber === 1 && nextSlideNumber === 5) {
@@ -688,40 +686,40 @@ function populateSlideFive() {
     'opacity': 'show'
   }, 1500);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-transparent-wheel.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-transparent-wheel.png"]').fadeIn(1000);
   }, 1400);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-poultry.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-poultry.png"]').fadeIn(1000);
   }, 1600);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-cement.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-cement.png"]').fadeIn(1000);
   }, 1800);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-steel.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-steel.png"]').fadeIn(1000);
   }, 2000);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-real-estate.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-real-estate.png"]').fadeIn(1000);
   }, 2200);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-construction.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-construction.png"]').fadeIn(1000);
   }, 2400);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-afghan.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-afghan.png"]').fadeIn(1000);
   }, 2600);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-usg.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-usg.png"]').fadeIn(1000);
   }, 2800);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-rim-consumer.png').fadeIn(2000);
+    $('#slide-05 img[src="images/slide-05-rim-consumer.png"]').fadeIn(2000);
   }, 1600);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-rim-government.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-rim-government.png"]').fadeIn(1000);
   }, 2600);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-consumer-text.png').fadeIn(2000);
+    $('#slide-05 img[src="images/slide-05-consumer-text.png"]').fadeIn(2000);
   }, 1600);
   setTimeout(function() {
-    $('#slide-05 img[src="images/slide-05-government-text.png').fadeIn(1000);
+    $('#slide-05 img[src="images/slide-05-government-text.png"]').fadeIn(1000);
   }, 2600);
 }
 function emptySlideFive() {
@@ -729,18 +727,18 @@ function emptySlideFive() {
   setTimeout(function() {
     $('#slide-05 .rahmani-group-projects').css({'top': '30%'});
   }, 1100);
-  $('#slide-05 img[src="images/slide-05-transparent-wheel.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-poultry.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-cement.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-steel.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-real-estate.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-construction.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-afghan.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-usg.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-rim-consumer.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-rim-government.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-consumer-text.png').fadeOut(1000);
-  $('#slide-05 img[src="images/slide-05-government-text.png').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-transparent-wheel.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-poultry.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-cement.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-steel.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-real-estate.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-construction.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-afghan.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-usg.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-rim-consumer.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-rim-government.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-consumer-text.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-government-text.png"]').fadeOut(1000);
 }
 
 $(document).ready(function() {
