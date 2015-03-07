@@ -835,6 +835,11 @@ a.navbar-brand {
   position: absolute;
   top: 14%;
 }
+#slide-05 img[src="images/map.png"] {
+  border: 1px solid red;
+  position: absolute;
+  top: 14%;
+}
 /* Slide 5 END */
 
 /* Footer START */

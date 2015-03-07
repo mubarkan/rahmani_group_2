@@ -375,6 +375,10 @@ function adjustSlide05Text() {
     'width': width1b,
     'left': left1
   });
+  $('#slide-05 img[src="images/map.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
 }
 function nextSlide() {
   var currentSlideId = $('.active').attr('id');
