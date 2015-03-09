@@ -467,6 +467,10 @@ function nextSlide() {
   } else if (currentSlideNumber === 5 && nextSlideNumber === 1) {
     populateSlideOne(); //no need to delay population of slide one
   }
+
+  setTimeout(function() {
+    $('img[usemap]').rwdImageMaps();
+  }, 4000);
 }
 function previousSlide() {
   var currentSlideId = $('.active').attr('id');
@@ -521,6 +525,10 @@ function previousSlide() {
       populateSlideFour();
     }, 300);  //precation
   }
+
+  setTimeout(function() {
+    $('img[usemap]').rwdImageMaps();
+  }, 4000);
 }
 function populateSlideOne() {
   $('#slide-01 img').css({
@@ -816,9 +824,7 @@ function togglePieMessage() {
 }
 
 $(document).ready(function(e) {
-  setTimeout(function() {
-    $('img[usemap]').rwdImageMaps();
-  }, 4000);
+
   adjustSlidesHeight();
   $(window).on('resize', adjustSlidesHeight);
   $(window).on('resize', adjustSlide02Text);
