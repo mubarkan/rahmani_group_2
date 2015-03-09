@@ -406,6 +406,12 @@ a.navbar-brand {
   left: 37.5%;
   top: 11%;
 }
+#slide-03 img[src="images/slide-03-map-screen.png"] {
+  width: 25%;
+  position: absolute;
+  left: 37.5%;
+  top: 11%;
+}
 #slide-03 img[src="images/line_01.png"] {
   /*border: 1px solid red;*/
   display: none;
@@ -583,8 +589,8 @@ a.navbar-brand {
 #slide-03 #hotspot-realestate-message {
   display: none;
   position: absolute;
-  top: 35%;
-  left: 35%;
+  top: 30%;
+  left: 20%;
 }
 #slide-03 #hotspot-shariah-message {
   display: none;
