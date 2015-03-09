@@ -165,6 +165,10 @@ function adjustSlide03Text() {
     'width': width1b,
     'left': left1
   });
+  $('#slide-03 img[src="images/slide-03-map-screen.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
   $('#slide-03 img[src="images/line_01.png"]').css({
     'width': width2b,
     'left': left2
@@ -814,7 +818,7 @@ function togglePieMessage() {
 $(document).ready(function(e) {
   setTimeout(function() {
     $('img[usemap]').rwdImageMaps();
-  }, 6000);
+  }, 4000);
   adjustSlidesHeight();
   $(window).on('resize', adjustSlidesHeight);
   $(window).on('resize', adjustSlide02Text);
