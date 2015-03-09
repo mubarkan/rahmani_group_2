@@ -801,7 +801,18 @@ a.navbar-brand {
   position: absolute;
   top: 14%;
 }
+#slide-05 img[src="images/slide-05-steel-hover.png"] {
+  /*border: 1px solid red;*/
+  display: none;
+  position: absolute;
+  top: 14%;
+}
 #slide-05 img[src="images/slide-05-steel.png"] {
+  display: none;
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-real-estate-hover.png"] {
   display: none;
   position: absolute;
   top: 14%;
@@ -811,12 +822,27 @@ a.navbar-brand {
   position: absolute;
   top: 14%;
 }
+#slide-05 img[src="images/slide-05-construction-hover.png"] {
+  display: none;
+  position: absolute;
+  top: 14%;
+}
 #slide-05 img[src="images/slide-05-construction.png"] {
   display: none;
   position: absolute;
   top: 14%;
 }
+#slide-05 img[src="images/slide-05-afghan-hover.png"] {
+  display: none;
+  position: absolute;
+  top: 14%;
+}
 #slide-05 img[src="images/slide-05-afghan.png"] {
+  display: none;
+  position: absolute;
+  top: 14%;
+}
+#slide-05 img[src="images/slide-05-usg-hover.png"] {
   display: none;
   position: absolute;
   top: 14%;

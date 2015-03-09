@@ -347,7 +347,15 @@ function adjustSlide05Text() {
     'width': width1b,
     'left': left1
   });
+  $('#slide-05 img[src="images/slide-05-steel-hover.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
   $('#slide-05 img[src="images/slide-05-steel.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-real-estate-hover.png"]').css({
     'width': width1b,
     'left': left1
   });
@@ -355,11 +363,23 @@ function adjustSlide05Text() {
     'width': width1b,
     'left': left1
   });
+  $('#slide-05 img[src="images/slide-05-construction-hover.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
   $('#slide-05 img[src="images/slide-05-construction.png"]').css({
     'width': width1b,
     'left': left1
   });
+  $('#slide-05 img[src="images/slide-05-afghan-hover.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
   $('#slide-05 img[src="images/slide-05-afghan.png"]').css({
+    'width': width1b,
+    'left': left1
+  });
+  $('#slide-05 img[src="images/slide-05-usg-hover.png"]').css({
     'width': width1b,
     'left': left1
   });
@@ -713,17 +733,32 @@ function populateSlideFive() {
     $('#slide-05 img[src="images/slide-05-cement.png"]').fadeIn(1000);
   }, 1800);
   setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-steel-hover.png"]').fadeIn(1000);
+  }, 2000);
+  setTimeout(function() {
     $('#slide-05 img[src="images/slide-05-steel.png"]').fadeIn(1000);
   }, 2000);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-real-estate-hover.png"]').fadeIn(1000);
+  }, 2200);
   setTimeout(function() {
     $('#slide-05 img[src="images/slide-05-real-estate.png"]').fadeIn(1000);
   }, 2200);
   setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-construction-hover.png"]').fadeIn(1000);
+  }, 2400);
+  setTimeout(function() {
     $('#slide-05 img[src="images/slide-05-construction.png"]').fadeIn(1000);
   }, 2400);
   setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-afghan-hover.png"]').fadeIn(1000);
+  }, 2600);
+  setTimeout(function() {
     $('#slide-05 img[src="images/slide-05-afghan.png"]').fadeIn(1000);
   }, 2600);
+  setTimeout(function() {
+    $('#slide-05 img[src="images/slide-05-usg-hover.png"]').fadeIn(1000);
+  }, 2800);
   setTimeout(function() {
     $('#slide-05 img[src="images/slide-05-usg.png"]').fadeIn(1000);
   }, 2800);
@@ -750,10 +785,15 @@ function emptySlideFive() {
   $('#slide-05 img[src="images/slide-05-poultry.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-cement-hover.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-cement.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-steel-hover.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-steel.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-real-estate-hover.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-real-estate.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-construction-hover.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-construction.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-afghan-hover.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-afghan.png"]').fadeOut(1000);
+  $('#slide-05 img[src="images/slide-05-usg-hover.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-usg.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-rim-consumer.png"]').fadeOut(1000);
   $('#slide-05 img[src="images/slide-05-rim-government.png"]').fadeOut(1000);
@@ -769,7 +809,7 @@ function toggleHotSpotMessage() {
 $(document).ready(function(e) {
   setTimeout(function() {
     $('img[usemap]').rwdImageMaps();
-  }, 5000);
+  }, 6000);
   adjustSlidesHeight();
   $(window).on('resize', adjustSlidesHeight);
   $(window).on('resize', adjustSlide02Text);
