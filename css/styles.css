@@ -577,38 +577,38 @@ a.navbar-brand {
 #slide-03 #hotspot-gold-message {
   display: none;
   position: absolute;
-  top: 45%;
-  left: 30%;
+  top: 15%;
+  left: 65%;
 }
 #slide-03 #hotspot-equities-message {
   display: none;
   position: absolute;
-  top: 40%;
-  left: 33%;
+  top: 15%;
+  left: 65%;
 }
 #slide-03 #hotspot-realestate-message {
   display: none;
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 15%;
+  left: 65%;
 }
 #slide-03 #hotspot-shariah-message {
   display: none;
   position: absolute;
-  top: 25%;
-  left: 35%;
+  top: 15%;
+  left: 65%;
 }
 #slide-03 #hotspot-sukuks-message {
   display: none;
   position: absolute;
-  top: 20%;
-  left: 35%;
+  top: 15%;
+  left: 65%;
 }
 #slide-03 #hotspot-translogistics-message {
   display: none;
   position: absolute;
-  top: 30%;
-  left: 20%;
+  top: 15%;
+  left: 65%;
 }
 .hotspot-pie {
   /*display: none;    /* needed to toggle hotspots*/
