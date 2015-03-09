@@ -805,6 +805,11 @@ function toggleHotSpotMessage() {
   console.log("enter: " + id);
   $(id).toggle();
 }
+function togglePieMessage() {
+  var id = "#" + $(this).attr('id').replace("-map", "") + "-message";
+  console.log("enter: " + id);
+  $(id).slideToggle(500);
+}
 
 $(document).ready(function(e) {
   setTimeout(function() {
@@ -819,6 +824,7 @@ $(document).ready(function(e) {
   $('.arrow-up').on('click', nextSlide);
   $('.arrow-down').on('click', previousSlide);
   $('.hotspot-area').on('mouseenter mouseleave', toggleHotSpotMessage);
+  $('.group-structure-hotspot-area').on('mouseenter mouseleave', togglePieMessage);
 });
 
 

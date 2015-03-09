@@ -568,6 +568,64 @@ a.navbar-brand {
   top: 54.5%;
   left: 68%;
 }
+#slide-03 #hotspot-gold-message {
+  display: none;
+  position: absolute;
+  top: 45%;
+  left: 30%;
+}
+#slide-03 #hotspot-equities-message {
+  display: none;
+  position: absolute;
+  top: 40%;
+  left: 33%;
+}
+#slide-03 #hotspot-realestate-message {
+  display: none;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+}
+#slide-03 #hotspot-shariah-message {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+#slide-03 #hotspot-sukuks-message {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+}
+#slide-03 #hotspot-translogistics-message {
+  display: none;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+}
+.hotspot-pie {
+  /*display: none;    /* needed to toggle hotspots*/
+  background-color: rgba(164,164,164,0.47);
+  padding: 5px;
+  color: #C7A865;
+  width: 200px;
+  height: 150px;
+}
+.hotspot-pie h5 {
+  margin-left: 10px;
+  color: white;
+}
+.hotspot-pie p {
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.hotspot-pie em {
+  color: #C7A865;
+}
 /* Slide 3 END */
 
 /* Slide 4 START */
