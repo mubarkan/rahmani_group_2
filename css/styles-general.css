@@ -62,6 +62,9 @@ ul {
   font-size: 1.3em;
   text-align: justify;
 }
-img[src="images/RG-corporate-structure.png"] {
+img[src="images/image-rg(2).png"] {
+  width: 100%;
+}
+img[src="images/rg-offices.png"] {
   width: 100%;
 }
