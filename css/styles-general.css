@@ -62,8 +62,11 @@ ul {
   font-size: 1.3em;
   text-align: justify;
 }
-img[src="images/image-rg-2.png"] {
-  width: 100%;
+img[src="images/business-units.png"] {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 img[src="images/rg-offices.png"] {
   width: 100%;
