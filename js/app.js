@@ -23,22 +23,22 @@ function adjustSlidesHeight() {
     });
   } else {
     $('.slides-body').css({
-      'height': height-240
+      'height': height-235
     });
     $('#slide-01').css({
-      'height': height-240
+      'height': height-235
     });
     $('#slide-02').css({
-      'height': height-240
+      'height': height-235
     });
     $('#slide-03').css({
-      'height': height-240
+      'height': height-235
     });
     $('#slide-04').css({
-      'height': height-240
+      'height': height-235
     });
     $('#slide-05').css({
-      'height': height-240
+      'height': height-235
     });
   }
 }

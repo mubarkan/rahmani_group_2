@@ -1,8 +1,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  background-color: #EDF2F3;
-  color: #8B6B26;
+  background-color: #EDF2F3; /* #E0DCCF; */
+  color: #c7a865; /* #8B6B26; */
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
@@ -58,7 +58,7 @@ ul {
 /* color ul squares END */
 
 .main-body p, .main-body li {
-  color: #878787;
+  color: #878787; /* #C7A865; */
   font-size: 1.3em;
   text-align: justify;
 }
